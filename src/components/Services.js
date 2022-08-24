@@ -1,27 +1,63 @@
 import React from "react";
 
-import arrowRight from "../assets/arrow.png";
-
 const Services = () => {
   return (
-    <section className="py-20 w-full">
-      <div className="lg:w-10/12 mx-auto">
-        <h2 className="font-extrabold text-center text-4xl text-primary mb-4">
-          <span className="font-normal text-black">NOS</span> SERVICES
+    <section id="services" className="py-10 lg:py-20 w-full h-full">
+      <div className="w-11/12 lg:w-10/12 mx-auto">
+        <h2 className="font-extrabold text-center text-3xl lg:text-4xl text-primary mb-4">
+          <span className="font-normal text-black">Nos</span> Services
         </h2>
-        <p className="text-center text-xl font-thin mb-10">
+        <p className="text-center lg:text-xl font-thin mb-10">
           Nous vous proposons divers services pour satisfaire vos besoins
         </p>
 
-        <div className="flex justify-center">
-          <div className="h-[1000px] bg-primary w-1 flex justify-center relative">
-            <div className="absolute top-0 service-number">1</div>
-
-            <div className="absolute top-[50%] transform translate-y-[-50%] service-number">
-              2
+        <div className="flex flex-col space-y-10 items-center">
+          <div className="flex w-full flex-row-reverse items-center">
+            <div className="service-box">
+              <h3 className="service-title">
+                Developpement <span className="text-primary">Web</span>
+              </h3>
+              <p className="service-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae corporis, maiores qui blanditiis repellat enim. Odit
+                delectus alias at autem quaerat harum iure placeat rerum
+                provident voluptatum sapiente debitis quae ratione quos, fugiat
+                sunt mollitia cumque odio! Natus, ipsam consequuntur!
+              </p>
             </div>
+            <div className="service-number">1</div>
+          </div>
 
-            <div className="absolute bottom-0 service-number">3</div>
+          <div className="flex w-full items-center">
+            <div className="service-box hover:shadow-boxl">
+              <h3 className="service-title">
+                Community <span className="text-primary">Management</span>
+              </h3>
+              <p className="service-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae corporis, maiores qui blanditiis repellat enim. Odit
+                delectus alias at autem quaerat harum iure placeat rerum
+                provident voluptatum sapiente debitis quae ratione quos, fugiat
+                sunt mollitia cumque odio! Natus, ipsam consequuntur!
+              </p>
+            </div>
+            <div className="service-number">2</div>
+          </div>
+
+          <div className="flex flex-row-reverse w-full items-center">
+            <div className="service-box  ">
+              <h3 className="service-title">
+                Composition <span className="text-primary">jingle</span>
+              </h3>
+              <p className="service-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae corporis, maiores qui blanditiis repellat enim. Odit
+                delectus alias at autem quaerat harum iure placeat rerum
+                provident voluptatum sapiente debitis quae ratione quos, fugiat
+                sunt mollitia cumque odio! Natus, ipsam consequuntur!
+              </p>
+            </div>
+            <div className="service-number">3</div>
           </div>
         </div>
       </div>

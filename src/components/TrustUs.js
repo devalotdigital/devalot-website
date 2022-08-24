@@ -6,19 +6,20 @@ import pratique from "../assets/pratique.png";
 
 const TrustUs = () => {
   return (
-    <section className="bg-trustus bg-cover  h-[100vh] w-full ">
-      <div className="absolute bg-secondary h-full w-full opacity-50"></div>
-      <div className="lg:w-10/12 mx-auto flex justify-between items-center h-full ">
-        <h2 className="text-6xl w-9/12 font-extrabold z-10 text-white ">
-          Faites nous confiance, <br /> on se charge de tout!
+    <section className="py-10 bg-trustus bg-center lg:bg-cover bg-no-repeat relative  lg:h-[100vh] w-full ">
+      <div className="lg:absolute top-0  bg-secondary h-full w-full opacity-30"></div>
+      <div className="lg:w-10/12 w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between items-center h-full space-y-10 lg:space-y-0 lg:space-x-0 ">
+        <h2 className="lg:text-6xl  text-center lg:text-left text-3xl md:w-9/12 font-extrabold z-10 text-white">
+          Faites nous confiance, <br className="hidden sm:block" /> on se charge
+          de tout!
         </h2>
-        <div className="z-10 space-y-10 ">
+        <div className="z-10 space-y-10  lg:space-x-0 flex flex-col items-center lg:flex-col lg:justify-between  w-full lg:w-fit">
           <div className="card">
             <div className="title-box">
               <h3 className="card-title">Efficacité</h3>
-              <img src={efficacite} alt="" />
+              <img src={efficacite} alt="éfficacité" className="w-10" />
             </div>
-            <p>
+            <p className="card-text">
               Faire les bons choix tout en maximisant les résultats attendus.
             </p>
           </div>
@@ -26,9 +27,9 @@ const TrustUs = () => {
           <div className="card">
             <div className="title-box">
               <h3 className="card-title">Créativité</h3>
-              <img src={creativite} alt="" />
+              <img src={creativite} alt="créativité" className="w-10" />
             </div>
-            <p>
+            <p className="card-text">
               Proposer des solutions qui vont faire la satisfaction du client.
             </p>
           </div>
@@ -36,9 +37,11 @@ const TrustUs = () => {
           <div className="card">
             <div className="title-box">
               <h3 className="card-title">Flexibilité</h3>
-              <img src={pratique} alt="" />
+              <img src={pratique} alt="flexibilité" className="w-10" />
             </div>
-            <p>S'adapter à la situation pour répondre aux besoins du client.</p>
+            <p className="card-text">
+              S'adapter à la situation pour répondre aux besoins du client.
+            </p>
           </div>
         </div>
       </div>
