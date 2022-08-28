@@ -15,22 +15,22 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
         </h1>
         <ul className="lg:text-[1em] text-xs flex space-x-9 hidden lg:flex">
           <li>
-            <a href="#accueil" className="uppercase navlink">
+            <a href="#accueil" className="navlink">
               Accueil
             </a>
           </li>
           <li>
-            <a href="#whois" className="uppercase navlink">
+            <a href="#whois" className="navlink">
               Qui somme nous
             </a>
           </li>
           <li>
-            <a href="#services" className="uppercase navlink">
+            <a href="#services" className="navlink">
               Nos Services
             </a>
           </li>
           <li>
-            <a href="#contacts" className="uppercase navlink">
+            <a href="#contacts" className="navlink">
               Contacts
             </a>
           </li>

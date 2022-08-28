@@ -18,11 +18,11 @@ const Services = () => {
                 Developpement <span className="text-primary">Web</span>
               </h3>
               <p className="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae corporis, maiores qui blanditiis repellat enim. Odit
-                delectus alias at autem quaerat harum iure placeat rerum
-                provident voluptatum sapiente debitis quae ratione quos, fugiat
-                sunt mollitia cumque odio! Natus, ipsam consequuntur!
+                Vous souhaitez créer un site web pour votre entreprise, mais
+                vous ne savez pas à qui vous adresser ? Ne cherchez pas plus
+                loin vous êtes au bon endroit ! DevAlot Digital vous propose de
+                concevoir et d'héberger votre site web créer sur mesure de A à
+                Z.
               </p>
             </div>
             <div className="service-number">1</div>
@@ -34,11 +34,11 @@ const Services = () => {
                 Community <span className="text-primary">Management</span>
               </h3>
               <p className="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae corporis, maiores qui blanditiis repellat enim. Odit
-                delectus alias at autem quaerat harum iure placeat rerum
-                provident voluptatum sapiente debitis quae ratione quos, fugiat
-                sunt mollitia cumque odio! Natus, ipsam consequuntur!
+                Nous pouvons vous aidez à animer votre communauté, conquérir de
+                nouveaux clients et les fidéliser. DevAlot Digital est là pour
+                assurer la communication de votre boîte, la gestion de vos
+                réseaux sociaux et bien plus encore. Notre slogan "Vos
+                problèmes, nos solutions"
               </p>
             </div>
             <div className="service-number">2</div>
@@ -50,11 +50,9 @@ const Services = () => {
                 Composition <span className="text-primary">jingle</span>
               </h3>
               <p className="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae corporis, maiores qui blanditiis repellat enim. Odit
-                delectus alias at autem quaerat harum iure placeat rerum
-                provident voluptatum sapiente debitis quae ratione quos, fugiat
-                sunt mollitia cumque odio! Natus, ipsam consequuntur!
+                DevAlot Digital propose, de composer pour vous des jingles de
+                qualité pour vos publicités et autres animations à un prix
+                défiant toute concurrence. N'hésitez plus.
               </p>
             </div>
             <div className="service-number">3</div>

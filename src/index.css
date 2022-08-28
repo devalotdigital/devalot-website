@@ -41,5 +41,5 @@
 }
 
 .navlink {
-  @apply hover:text-primary duration-500;
+  @apply hover:text-primary duration-500 hover:scale-x-125 uppercase;
 }

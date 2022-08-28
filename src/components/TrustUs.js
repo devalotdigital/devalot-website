@@ -6,7 +6,7 @@ import pratique from "../assets/pratique.png";
 
 const TrustUs = () => {
   return (
-    <section className="py-10 bg-trustus bg-center lg:bg-cover bg-no-repeat relative  lg:h-[100vh] w-full ">
+    <section className="py-10 bg-trustus bg-center bg-cover bg-no-repeat relative  lg:h-[100vh] w-full ">
       <div className="lg:absolute top-0  bg-secondary h-full w-full opacity-30"></div>
       <div className="lg:w-10/12 w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between items-center h-full space-y-10 lg:space-y-0 lg:space-x-0 ">
         <h2 className="lg:text-6xl  text-center lg:text-left text-3xl md:w-9/12 font-extrabold z-10 text-white">
