@@ -5,15 +5,15 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
     <header
       className={`${
         isNavOpen
-          ? "fixed -top-[1000px] backdrop-blur-3xl bg-black duration-700 w-full text-white z-20 lg:px-0 overflow-hidden"
-          : "fixed top-0 backdrop-blur-3xl bg-black duration-300 w-full text-white z-20 lg:px-0 overflow-hidden"
+          ? "fixed -top-[1000px] backdrop-blur-3xl duration-700 w-full text-white z-20 lg:px-0 overflow-hidden"
+          : "fixed top-0 backdrop-blur-3xl bg-white duration-300 w-full text-white z-20 lg:px-0 overflow-hidden"
       }`}
     >
       <nav className="font-bold flex justify-between items-center w-11/12 lg:w-10/12 mx-auto py-4 relative">
-        <h1 className="text-xl lg:text-2xl">
+        <h1 className="text-xl lg:text-2xl text-black">
           DevAlot <span className="font-light text-primary">Digital</span>
         </h1>
-        <ul className="lg:text-[1em] text-xs flex space-x-9 hidden lg:flex">
+        <ul className="lg:text-[1em] text-xs text-black flex space-x-9 hidden lg:flex">
           <li>
             <a href="#accueil" className="navlink">
               Accueil
@@ -21,7 +21,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
           </li>
           <li>
             <a href="#whois" className="navlink">
-              Qui somme nous
+              A propos
             </a>
           </li>
           <li>

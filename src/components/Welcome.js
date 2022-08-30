@@ -6,17 +6,20 @@ const Welcome = () => {
       id="accueil"
       className="bg-welcome h-[100vh] bg-center bg-cover w-full text-white "
     >
-      <div className="absolute h-full w-full bg-secondary opacity-30"></div>
-      <div className="lg:w-10/12 w-11/12 mx-auto flex flex-col justify-center items-center sm:items-start h-full">
-        <p className="text-xl text-center sm:text-left md:w-3/5 lg:text-4xl lg:w-4/5 z-10 font-light">
-          Nous vous souhaitons la bienvenue. <br />
-          Chez <span className="font-extrabold">DevAlot Digital, </span>
-          vous apportez les{" "}
-          <span className="underline decoration-primary">problèmes</span>, nous
-          trouvons les{" "}
-          <span className="underline decoration-primary">solutions</span>.
-        </p>
-        <button className="hover:bg-black duration-500 bg-primary text-lg lg:text-2xl font-extrabold p-2 md:p-3 w-fit mt-5 z-10">
+      <div className="absolute h-full w-full bg-primary opacity-30"></div>
+      <div className="lg:w-10/12 w-11/12 mx-auto flex flex-col justify-center h-full">
+        <div className="z-10 w-full  lg:w-[60%] lg:w-[60%]">
+          <p className="font-extrabold text-left text-4xl sm:text-5xl  md:text-6xl lg:text-6xl 2xl:text-[6em] mb-5">
+            Bienvenue chez <br /> Devalot Digital.
+          </p>
+          <p className="text-base sm:text-lg md:text-xl w-[80%] sm:w-[50%] md:w-[70%] lg:text-2xl 2xl:text-[3em] 2xl:leading-normal font-light">
+            Vous apportez les{" "}
+            <span className="underline decoration-primary">problèmes</span>,
+            nous trouvons les{" "}
+            <span className="underline decoration-primary">solutions</span>.
+          </p>
+        </div>
+        <button className="hover:bg-white hover:text-primary duration-500 bg-primary text-lg lg:text-2xl  2xl:text-5xl 2xl:py-7 font-extrabold p-2 md:p-3 w-fit mt-5 z-10">
           CONTACTEZ-NOUS
         </button>
       </div>

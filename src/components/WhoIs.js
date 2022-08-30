@@ -4,13 +4,13 @@ import whois from "../assets/whois.jpg";
 
 const WhoIs = () => {
   return (
-    <section id="whois" className="lg:h-[100vh] bg-black">
+    <section id="whois" className="lg:h-[100vh] bg-primary">
       <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col lg:flex-row justify-between items-center py-10 h-full lg:space-x-4">
         <div className="lg:w-1/2 md:w-3/5">
           <h2 className="font-extrabold text-2xl lg:text-3xl pb-5 lg:pb-10 text-left">
             {/*DevAlot <span className="text-primary font-thin ">Digital</span>{" "} c'est quoi au juste ?*/}
-            Qui somme nous
-            <span className="text-primary"> ?</span>
+            A propos de
+            <span className="text-secondary"> nous</span>
           </h2>
           <div className="text-sm">
             <p>
