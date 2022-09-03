@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <div className=" mx-auto bg-primary space-y-2">
+      <div className="mx-auto bg-primary space-y-2">
         <div className=" text-white font-bold lg:w-10/12 mx-auto flex justify-center items-center py-3">
           <div className="flex space-x-3">
             <a
@@ -68,13 +68,18 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        {/* <div className="flex text-white justify-center text-center  text-xs md:text-sm pb-3">
-          <p>
-            +221 77 127 69 22 | +221 XX XXX XX XX | devalot.digital@gmail.com
+
+        <div className="flex text-white justify-center text-center  text-xs md:text-sm pb-3 2xl:text-2xl">
+          <p>devalot.digital@gmail.com</p>
+        </div>
+
+        <div className="flex flex-col lg:flex-row lg:justify-between text-white lg:w-10/12 mx-auto text-center pb-3 ">
+          <p className="text-xs md:text-sm pb-2 lg:pb-0 2xl:text-2xl">
+            Copyright © 2022 DevAlot Digital. Tous droits réservés.
           </p>
-        </div> */}
-        <div className="flex flex-col text-white lg:w-10/12 mx-auto text-center pb-3">
-          <p className="text-xs md:text-sm">© Copyright 2022 DevAlot Digital</p>
+          <p className="text-xs md:text-sm 2xl:text-2xl">
+            Créer avec &#10084;&#65039; par DevAlot Digital{" "}
+          </p>
         </div>
       </div>
     </footer>

@@ -3,14 +3,14 @@ import React from "react";
 const Services = () => {
   return (
     <section id="services" className="py-10 w-full h-full">
-      <h2 className="font-extrabold text-center text-3xl uppercase lg:text-4xl text-primary mb-4">
-        <span className="font-normal text-black ">Nos</span> Services
+      <h2 className="font-extrabold text-center text-3xl 2xl:text-6xl uppercase lg:text-4xl text-primary mb-4">
+        <span className="font-normal text-black">Nos</span> Services
       </h2>
       <p className="text-center lg:text-lg font-normal mb-10">
         Nous vous proposons divers services afin de satisfaire vos besoins !
       </p>
 
-      <ol class="relative border-l w-[90%] md:w-[80%] lg:w-[65%] xl:w-[55%] mx-auto border-primary">
+      <ol class="relative border-l w-[90%] md:w-[80%] lg:w-[65%] xl:w-[50%] mx-auto border-primary">
         <li class="mb-10 ml-4">
           <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-primary"></div>
           <h3 class="service-title">Conception de site Web</h3>
@@ -22,7 +22,7 @@ const Services = () => {
           </p>
         </li>
 
-        <li class="mb-10 ml-4">
+        {/* <li class="mb-10 ml-4">
           <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-primary"></div>
           <h3 class="service-title">Community Management</h3>
 
@@ -33,7 +33,7 @@ const Services = () => {
             sociaux et bien plus encore. Notre slogan "Vos problèmes, nos
             solutions"
           </p>
-        </li>
+        </li> */}
 
         <li class="mb-10 ml-4">
           <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-primary"></div>

@@ -15,7 +15,7 @@ const Sidebar = ({ isNavOpen, setIsNavOpen }) => {
         </li>
         <li onClick={() => setIsNavOpen(false)}>
           <a href="#whois" className="uppercase navlink">
-            Qui somme nous
+            A propos
           </a>
         </li>
         <li onClick={() => setIsNavOpen(false)}>
