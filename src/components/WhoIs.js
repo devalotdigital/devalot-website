@@ -1,18 +1,17 @@
 import React from "react";
 
-import whois from "../assets/whois.jpg";
+import whois from "../assets/whois.png";
 
 const WhoIs = () => {
   return (
     <section id="whois" className="lg:h-[100vh] bg-primary">
-      <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col lg:flex-row justify-between items-center py-10 h-full lg:space-x-4">
+      <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col lg:flex-row-reverse justify-between items-center py-10 h-full lg:space-x-4">
         <div className="lg:w-1/2 md:w-3/5">
-          <h2 className="font-extrabold 2xl:leading-tight text-2xl lg:text-3xl 2xl:text-[6em] pb-5 lg:pb-10 text-left">
-            {/*DevAlot <span className="text-primary font-thin ">Digital</span>{" "} c'est quoi au juste ?*/}
+          {/* <h2 className="font-extrabold 2xl:leading-tight text-2xl lg:text-5xl 2xl:text-[6em] pb-5 lg:pb-10 text-left">
             A propos de
-            <span className="text-secondary"> nous !</span>
-          </h2>
-          <div className="text-sm 2xl:text-3xl 2xl:mt-10">
+            <span className="text-white"> nous !</span>
+          </h2> */}
+          <div className="text-sm lg:text-lg 2xl:text-3xl 2xl:mt-10">
             <p className="2xl:leading-normal">
               DevAlot Digital est une agence digitale sénégalaise spécialisée
               dans le web fondé par deux étudiants en cursus d'informatique.

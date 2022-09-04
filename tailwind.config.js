@@ -7,7 +7,7 @@ module.exports = {
         perso: ["Poppins"],
       },
       colors: {
-        primary: "#117DBB",
+        primary: "#1479B7",
         secondary: "#030067",
         tertiary: "#FB445B",
         quaternary: "#807f80",

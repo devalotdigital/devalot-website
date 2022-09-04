@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 .card {
-  @apply bg-white flex-col p-5 lg:hover:border-l-8  lg:border-l-4 border-b-4  hover:border-b-8 lg:hover:border-b-0 lg:border-b-0 border-primary w-full max-w-[290px] lg:max-w-[300px] 2xl:max-w-[500px] cursor-pointer hover:bg-black hover:text-white duration-500 text-base;
+  @apply bg-white flex-col p-5 lg:hover:border-l-8  lg:border-l-4 border-b-4  hover:border-b-8 lg:hover:border-b-0 lg:border-b-0 border-primary w-full max-w-[290px] lg:max-w-[300px] 2xl:max-w-[500px] cursor-pointer hover:bg-primary hover:text-white duration-500 text-base hover:-translate-x-5;
 }
 
 .card-title {
-  @apply font-extrabold text-primary text-xl lg:text-2xl 2xl:text-4xl 2xl:pb-4;
+  @apply font-extrabold /*text-primary*/ text-xl lg:text-2xl 2xl:text-4xl 2xl:pb-4;
 }
 
 .card-text {
@@ -21,7 +21,7 @@
 }
 
 .service-number {
-  @apply hidden  sm:text-[8em] lg:text-[9em] xl:text-[12em] opacity-50 sm:flex justify-center items-center w-full;
+  @apply rounded-full bg-white  w-12 h-12 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center text-primary text-3xl font-extrabold;
 }
 
 .service-title {
@@ -29,17 +29,25 @@
 }
 
 .service-text {
-  @apply text-sm lg:text-base mb-4 text-justify 2xl:text-3xl 2xl:leading-normal;
+  @apply text-sm lg:text-base mb-4 text-justify xl:text-lg 2xl:text-3xl 2xl:leading-normal;
+}
+
+.service-boxl {
+  @apply hover:scale-105 hover:shadow-boxl hover:bg-black hover:-translate-x-10 hover:text-white duration-500 p-4 bg-white shadow p-4 bg-white shadow cursor-pointer;
+}
+
+.service-boxr {
+  @apply hover:scale-105 hover:shadow-box hover:bg-black hover:translate-x-10 hover:text-white duration-500 p-4 bg-white shadow p-4 bg-white shadow cursor-pointer;
 }
 
 .socials {
-  @apply hover:fill-tertiary duration-500;
+  @apply hover:fill-tertiary hover:scale-125 duration-500;
 }
 
 .navlink {
-  @apply hover:text-primary duration-500 hover:scale-x-125 uppercase;
+  @apply hover:text-primary duration-500 uppercase;
 }
 
 .contact {
-  @apply hover:bg-white hover:text-primary duration-500 bg-primary text-lg lg:text-2xl  2xl:text-5xl 2xl:py-7 font-extrabold p-2 md:p-3 w-fit mt-5 z-10 text-white;
+  @apply hover:bg-white hover:text-primary duration-500 bg-primary text-lg lg:text-2xl  2xl:text-5xl 2xl:py-7 font-extrabold p-2 md:p-3 w-fit mt-5 z-10 text-white hover:scale-105 hover:shadow-boxl;
 }
