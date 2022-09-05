@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
   return (
     <footer>
       <div className="mx-auto bg-primary space-y-2">
         <div className=" text-white font-bold lg:w-10/12 mx-auto flex justify-center items-center py-3">
           <div className="flex space-x-3">
             <a
+              data-aos="fade-up"
+              data-aos-duration="1100"
               href="https://www.facebook.com/GalsenDigitalAgency"
               target="_blank"
               rel="noreferrer"
@@ -22,6 +31,8 @@ const Footer = () => {
               </svg>
             </a>
             <a
+              data-aos="fade-up"
+              data-aos-duration="1200"
               href="https://www.instagram.com/galsendigitalagency/"
               target="_blank"
               rel="noreferrer"
@@ -37,6 +48,8 @@ const Footer = () => {
               </svg>
             </a>
             <a
+              data-aos="fade-up"
+              data-aos-duration="1300"
               href="https://mobile.twitter.com/galsendigital"
               target="_blank"
               rel="noreferrer"
@@ -52,6 +65,8 @@ const Footer = () => {
               </svg>
             </a>
             <a
+              data-aos="fade-up"
+              data-aos-duration="1400"
               href="https://www.linkedin.com/company/galsen-digital-agency/"
               target="_blank"
               rel="noreferrer"
@@ -69,10 +84,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row lg:justify-between text-white lg:w-10/12 mx-auto text-center pb-3 ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="flex flex-col lg:justify-between text-white lg:w-10/12 mx-auto text-center pb-3 "
+        >
           <p className="text-xs md:text-sm pb-2 lg:pb-0 2xl:text-2xl">
-            Copyright © 2022 DevAlot Digital.
-            <br className="sm:hidden" /> Tous droits réservés.
+            Copyright © 2022 DevAlot Digital. Tous droits réservés.
           </p>
           <p className="text-xs md:text-sm 2xl:text-2xl">
             Créer avec &#10084;&#65039; par DevAlot Digital{" "}

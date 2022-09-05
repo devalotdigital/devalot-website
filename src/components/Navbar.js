@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = ({ isNavOpen, setIsNavOpen }) => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <header
+      data-aos="fade-down"
       className={`${
         isNavOpen
           ? "fixed -top-[1000px] backdrop-blur-3xl duration-700 w-full text-white z-20 lg:px-0 overflow-hidden"

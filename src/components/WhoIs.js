@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import whois from "../assets/whois.png";
 
 const WhoIs = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1500,
+    });
+  }, []);
+
   return (
     <section id="whois" className="lg:h-[100vh] bg-primary">
       <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col-reverse lg:flex-row-reverse justify-between items-center py-10 h-full lg:space-x-4">
@@ -12,12 +21,12 @@ const WhoIs = () => {
             <span className="text-white"> nous !</span>
           </h2> */}
           <div className="text-sm lg:text-lg 2xl:text-3xl 2xl:mt-10">
-            <p className="2xl:leading-normal">
+            <p className="2xl:leading-normal" data-aos="fade-up">
               DevAlot Digital est une agence digitale sénégalaise spécialisée
               dans le web fondé par deux étudiants en cursus d'informatique.
             </p>{" "}
             <br />
-            <p className="2xl:leading-normal">
+            <p className="2xl:leading-normal" data-aos="fade-up">
               Le nom DevAlot, signifie litteralement : "Develop a lot" en
               anglais, ce nom fait allusion à l'aide que l'on peut apporter aux
               entreprises qui cherchent à se développer voir s'étendre du point
@@ -27,14 +36,14 @@ const WhoIs = () => {
               modernes.
             </p>
             <br />
-            <p className="2xl:leading-normal">
+            <p className="2xl:leading-normal" data-aos="fade-up">
               C'est ainsi que le 8 juin 2022 nous avons décider de nous lancer
               dans cette aventure qui nous excite plus que tout. Nous espérons
               vous compter parmi nos futurs clients !
             </p>
           </div>
         </div>
-        <div className="mb-3 lg:mb-0">
+        <div className="mb-3 lg:mb-0" data-aos="fade-right">
           <img
             src={whois}
             alt="ordinateur"

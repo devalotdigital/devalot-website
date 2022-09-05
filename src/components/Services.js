@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <section id="services" className="pt-10 w-full h-full bg-primary">
-      <h2 className="font-extrabold text-center text-3xl 2xl:text-6xl uppercase lg:text-4xl text-white mb-4">
+      <h2
+        data-aos="fade-up"
+        className="font-extrabold text-center text-3xl 2xl:text-6xl uppercase lg:text-4xl text-white mb-4"
+      >
         <span className="font-normal text-white">Nos</span> Services
       </h2>
-      <p className="text-center lg:text-lg font-normal text-white ">
+      <p
+        className="text-center lg:text-lg font-normal text-white"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+      >
         Nous vous proposons divers services afin de satisfaire vos besoins !
       </p>
       <div class="min-h-screen bg-primary py-6 flex flex-col justify-center sm:py-10">
@@ -20,7 +36,11 @@ const Services = () => {
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex justify-start w-full mx-auto items-center">
                   <div class="w-full sm:w-1/2 sm:pr-8">
-                    <div class="service-boxl">
+                    <div
+                      class="service-boxl"
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                    >
                       <h3 class="service-title">Conception de site Web</h3>
 
                       <p className="service-text">
@@ -42,7 +62,11 @@ const Services = () => {
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex justify-end w-full mx-auto items-center">
                   <div class="w-full sm:w-1/2 sm:pl-8">
-                    <div class="service-boxr">
+                    <div
+                      class="service-boxr"
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                    >
                       <h3 class="service-title">Maintenance de site Web</h3>
 
                       <p className="service-text">
@@ -64,7 +88,11 @@ const Services = () => {
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex justify-start w-full mx-auto items-center">
                   <div class="w-full sm:w-1/2 sm:pr-8">
-                    <div class="service-boxl">
+                    <div
+                      class="service-boxl"
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                    >
                       <h3 class="service-title">Infographie & Design</h3>
 
                       <p className="service-text">
@@ -86,7 +114,11 @@ const Services = () => {
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex justify-end w-full mx-auto items-center">
                   <div class="w-full sm:w-1/2 sm:pl-8">
-                    <div class="service-boxr">
+                    <div
+                      class="service-boxr"
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                    >
                       <h3 class="service-title">Composition musicale</h3>
 
                       <p className="service-text">

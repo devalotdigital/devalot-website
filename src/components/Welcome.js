@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Welcome = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1500,
+    });
+  }, []);
   return (
     <section
       id="accueil"
@@ -8,7 +16,10 @@ const Welcome = () => {
     >
       <div className="absolute h-full w-full bg-transparent opacity-30"></div>
       <div className="lg:w-10/12 w-11/12 mx-auto flex flex-col justify-center h-full">
-        <div className="z-10 w-full  lg:w-[60%] lg:w-[60%]">
+        <div
+          data-aos="fade-left"
+          className="z-10 w-full  lg:w-[60%] lg:w-[60%]"
+        >
           <p className="font-extrabold text-left text-4xl sm:text-5xl  md:text-6xl lg:text-6xl 2xl:text-[6em] mb-5 2xl:leading-tight">
             Bienvenue chez <br /> Devalot Digital.
           </p>
@@ -19,7 +30,9 @@ const Welcome = () => {
             <span className="underline decoration-primary">solutions</span>.
           </p>
         </div>
-        <button className="contact">CONTACTEZ-NOUS</button>
+        <button data-aos="fade-up" className="contact">
+          CONTACTEZ-NOUS
+        </button>
       </div>
     </section>
   );
