@@ -7,6 +7,7 @@ const Welcome = () => {
     AOS.init({
       once: true,
       duration: 1500,
+      disable: "mobile",
     });
   }, []);
   return (

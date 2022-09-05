@@ -6,6 +6,7 @@ const Footer = () => {
   useEffect(() => {
     AOS.init({
       once: true,
+      disable: "mobile",
     });
   }, []);
   return (
