@@ -13,7 +13,7 @@ function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="font-perso box-border">
+    <div className="font-perso box-border overflow-x-hidden">
       <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Welcome />
       <WhoIs />
