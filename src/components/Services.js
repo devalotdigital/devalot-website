@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <section id="services" className="pt-10 w-full h-full bg-primary">
       <h2 className="font-extrabold text-center text-3xl 2xl:text-6xl uppercase lg:text-4xl text-white mb-4">
-        <span className="font-normal text-black">Nos</span> Services
+        <span className="font-normal text-white">Nos</span> Services
       </h2>
       <p className="text-center lg:text-lg font-normal text-white ">
         Nous vous proposons divers services afin de satisfaire vos besoins !
