@@ -84,11 +84,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="flex flex-col lg:justify-between text-white lg:w-10/12 mx-auto text-center pb-3 "
-        >
+        <div className="flex flex-col lg:justify-between text-white lg:w-10/12 mx-auto text-center pb-3 ">
           <p className="text-xs md:text-sm pb-2 lg:pb-0 2xl:text-2xl">
             Copyright © 2022 DevAlot Digital. Tous droits réservés.
           </p>
