@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/devalot-website/static/css/main.0134c5b3.css",
-    "main.js": "/devalot-website/static/js/main.94cecce7.js",
+    "main.js": "/devalot-website/static/js/main.8d56e403.js",
     "static/media/teamwork.jpg": "/devalot-website/static/media/teamwork.96d4fa9e539a6f899bfe.jpg",
     "static/media/contact.jpg": "/devalot-website/static/media/contact.49f9e3e64a16ec4e2e7f.jpg",
     "static/media/welcome.jpg": "/devalot-website/static/media/welcome.7ce951999237028d4728.jpg",
     "static/media/whois.png": "/devalot-website/static/media/whois.23c727fd29f60934adc1.png",
     "index.html": "/devalot-website/index.html",
     "main.0134c5b3.css.map": "/devalot-website/static/css/main.0134c5b3.css.map",
-    "main.94cecce7.js.map": "/devalot-website/static/js/main.94cecce7.js.map"
+    "main.8d56e403.js.map": "/devalot-website/static/js/main.8d56e403.js.map"
   },
   "entrypoints": [
     "static/css/main.0134c5b3.css",
-    "static/js/main.94cecce7.js"
+    "static/js/main.8d56e403.js"
   ]
 }
