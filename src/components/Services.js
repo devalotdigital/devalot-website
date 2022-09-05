@@ -2,15 +2,15 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section id="services" className="py-10 w-full h-full">
-      <h2 className="font-extrabold text-center text-3xl 2xl:text-6xl uppercase lg:text-4xl text-primary mb-4">
+    <section id="services" className="pt-10 w-full h-full bg-primary">
+      <h2 className="font-extrabold text-center text-3xl 2xl:text-6xl uppercase lg:text-4xl text-white mb-4">
         <span className="font-normal text-black">Nos</span> Services
       </h2>
-      <p className="text-center lg:text-lg font-normal mb-10">
+      <p className="text-center lg:text-lg font-normal text-white ">
         Nous vous proposons divers services afin de satisfaire vos besoins !
       </p>
-      <div class="min-h-screen bg-primary py-6 flex flex-col justify-center sm:py-12">
-        <div class="py-3 sm:max-w-[700px] md:max-w-[760px] lg:max-w-[1000px] sm:mx-auto w-full px-2 sm:px-0">
+      <div class="min-h-screen bg-primary py-6 flex flex-col justify-center sm:py-10">
+        <div class="py-3 sm:max-w-[700px] md:max-w-[760px] lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1300px] sm:mx-auto w-full px-2 sm:px-0">
           <div class="relative text-black antialiased text-sm text-lg font-normal">
             {/* <!-- Vertical bar running through middle --> */}
             <div class="hidden sm:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>

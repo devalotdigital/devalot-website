@@ -5,7 +5,7 @@ import whois from "../assets/whois.png";
 const WhoIs = () => {
   return (
     <section id="whois" className="lg:h-[100vh] bg-primary">
-      <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col lg:flex-row-reverse justify-between items-center py-10 h-full lg:space-x-4">
+      <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col-reverse lg:flex-row-reverse justify-between items-center py-10 h-full lg:space-x-4">
         <div className="lg:w-1/2 md:w-3/5">
           {/* <h2 className="font-extrabold 2xl:leading-tight text-2xl lg:text-5xl 2xl:text-[6em] pb-5 lg:pb-10 text-left">
             A propos de
@@ -34,11 +34,11 @@ const WhoIs = () => {
             </p>
           </div>
         </div>
-        <div className="hidden lg:block">
+        <div className="mb-3 lg:mb-0">
           <img
             src={whois}
             alt="ordinateur"
-            className="md:w-[400px] xl:w-[500px] 2xl:w-[800px]"
+            className="w-[300px] md:w-[400px] xl:w-[500px] 2xl:w-[800px]"
           />
         </div>
       </div>

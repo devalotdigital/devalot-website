@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .card {
-  @apply bg-white flex-col p-5 lg:hover:border-l-8  lg:border-l-4 border-b-4  hover:border-b-8 lg:hover:border-b-0 lg:border-b-0 border-primary w-full max-w-[290px] lg:max-w-[300px] 2xl:max-w-[500px] cursor-pointer hover:bg-primary hover:text-white duration-500 text-base hover:-translate-x-5;
+  @apply bg-white flex-col p-5 lg:hover:border-l-8  lg:border-l-4 border-b-4  hover:border-b-8 lg:hover:border-b-0 lg:border-b-0 border-primary w-full max-w-[290px] lg:max-w-[300px] 2xl:max-w-[500px] cursor-pointer hover:bg-primary hover:text-white duration-500 text-base lg:hover:-translate-x-5;
 }
 
 .card-title {
@@ -21,11 +21,11 @@
 }
 
 .service-number {
-  @apply rounded-full bg-white  w-12 h-12 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center text-primary text-3xl font-extrabold;
+  @apply rounded-full bg-white w-12 h-12 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center text-primary text-3xl 2xl:text-4xl font-extrabold;
 }
 
 .service-title {
-  @apply font-bold text-[1.4em] lg:text-2xl 2xl:text-4xl mb-4 text-primary;
+  @apply font-bold text-[1.1em] lg:text-2xl 2xl:text-4xl mb-4 text-primary;
 }
 
 .service-text {
@@ -33,11 +33,11 @@
 }
 
 .service-boxl {
-  @apply hover:scale-105 hover:shadow-boxl hover:bg-black hover:-translate-x-10 hover:text-white duration-500 p-4 bg-white shadow p-4 bg-white shadow cursor-pointer;
+  @apply lg:hover:scale-105 lg:hover:shadow-boxl lg:hover:bg-black lg:hover:-translate-x-10 lg:hover:text-white duration-500 bg-white shadow lg:p-4 pt-10 pb-5 px-5 bg-white shadow cursor-pointer;
 }
 
 .service-boxr {
-  @apply hover:scale-105 hover:shadow-box hover:bg-black hover:translate-x-10 hover:text-white duration-500 p-4 bg-white shadow p-4 bg-white shadow cursor-pointer;
+  @apply lg:hover:scale-105 lg:hover:shadow-box lg:hover:bg-black lg:hover:translate-x-10 lg:hover:text-white duration-500 p-4 bg-white shadow p-4 bg-white shadow lg:p-4 py-10 px-5 cursor-pointer;
 }
 
 .socials {
