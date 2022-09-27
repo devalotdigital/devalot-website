@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Navbar from "./components/Navbar";
 import Welcome from "./components/Welcome";
@@ -8,20 +8,39 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
+import { HashLoader } from "react-spinners";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  let [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    window.onload = () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+    };
+  }, []);
 
   return (
     <div className="font-perso box-border">
-      <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-      <Welcome />
-      <WhoIs />
-      <TrustUs />
-      <Services />
-      <Contact />
-      <Footer />
-      <Sidebar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+      {loading ? (
+        <div className="fixed h-full w-full top-0 left-0 z-50 flex flex-col justify-center items-center bg-primary text-center">
+          <HashLoader size={40} color="#ffffff" loading={loading} />
+          {/* <p className="mt-2 text-white">Je me charge...</p> */}
+        </div>
+      ) : (
+        <div>
+          <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+          <Welcome />
+          <WhoIs />
+          <TrustUs />
+          <Services />
+          <Contact />
+          <Footer />
+          <Sidebar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+        </div>
+      )}
     </div>
   );
 }
