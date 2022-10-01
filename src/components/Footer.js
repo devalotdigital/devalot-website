@@ -94,7 +94,7 @@ const Footer = () => {
             Copyright © 2022 DevAlot Digital. Tous droits réservés.
           </p>
           <p className="text-xs md:text-sm 2xl:text-2xl">
-            Créer avec &#10084;&#65039; par DevAlot Digital{" "}
+            Made with &#10084;&#65039; by DevAlot Digital{" "}
           </p>
         </div>
       </div>
