@@ -21,7 +21,7 @@
 }
 
 .service-number {
-  @apply rounded-full bg-white w-12 h-12 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center text-primary text-3xl 2xl:text-4xl font-extrabold;
+  @apply rounded-full bg-white w-12 h-12 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 md:flex items-center justify-center text-primary text-3xl 2xl:text-4xl font-extrabold hidden;
 }
 
 .service-title {
@@ -33,11 +33,11 @@
 }
 
 .service-boxl {
-  @apply lg:hover:scale-105 lg:hover:shadow-boxl lg:hover:bg-black lg:hover:-translate-x-10 lg:hover:text-white duration-500 bg-white shadow lg:p-4 pt-10 pb-5 px-5 bg-white shadow cursor-pointer;
+  @apply lg:hover:bg-black lg:hover:-translate-x-10 lg:hover:text-white duration-500 bg-white shadow p-4  px-5 bg-white shadow cursor-pointer ease-in-out;
 }
 
 .service-boxr {
-  @apply lg:hover:scale-105 lg:hover:shadow-box lg:hover:bg-black lg:hover:translate-x-10 lg:hover:text-white duration-500 p-4 bg-white shadow p-4 bg-white shadow lg:p-4 py-10 px-5 cursor-pointer;
+  @apply lg:hover:bg-black lg:hover:translate-x-10 lg:hover:text-white duration-500 bg-white shadow p-4 bg-white shadow  cursor-pointer;
 }
 
 .socials {

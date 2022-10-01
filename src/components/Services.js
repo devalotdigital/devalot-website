@@ -27,16 +27,16 @@ const Services = () => {
         Nous vous proposons divers services afin de satisfaire vos besoins !
       </p>
       <div class="min-h-screen bg-primary py-6 flex flex-col justify-center sm:py-10">
-        <div class="py-3 sm:max-w-[700px] md:max-w-[760px] lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1300px] sm:mx-auto w-full px-2 sm:px-0">
-          <div class="relative text-black antialiased text-sm text-lg font-normal">
+        <div class="py-3 max-w-[600px] md:max-w-[750px]  lg:max-w-[950px] xl:max-w-[1200px] 2xl:max-w-[1300px] sm:mx-auto w-full px-2 sm:px-0">
+          <div class="relative text-black antialiased  text-lg font-normal ">
             {/* <!-- Vertical bar running through middle --> */}
-            <div class="hidden sm:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+            <div class="hidden md:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
             {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
             <div class="mt-6 sm:mt-0 sm:mb-12">
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex justify-start w-full mx-auto items-center">
-                  <div class="w-full sm:w-1/2 sm:pr-8">
+                  <div class="w-full md:w-1/2 md:pr-8">
                     <div
                       class="service-boxl"
                       data-aos="fade-right"
@@ -45,11 +45,15 @@ const Services = () => {
                       <h3 class="service-title">Conception de site Web</h3>
 
                       <p className="service-text">
-                        Nous pouvons créer un site web pour votre entreprise,
-                        mais vous ne savez pas à qui vous adresser ? Ne cherchez
-                        pas plus loin vous êtes au bon endroit ! DevAlot Digital
-                        vous propose de concevoir et d'héberger votre site web
-                        créer sur mesure de A à Z.
+                        DevAlot met à votre disposition une équipe de
+                        développeurs passionnés par leur travail et prêt à
+                        relever le défis pour concevoir le site web de vos
+                        rêves. Des sites one page aux sites e-commerce en
+                        passant par les sites vitrines, DevAlot se donne pour
+                        mission de répondre à vos besoins afin de vous
+                        satisfaire. De plus pour un site vitrine commandé on
+                        vous offre une période de suivi de votre site de 2
+                        semaines pour suivre le comportement de votre site.
                       </p>
                     </div>
                   </div>
@@ -62,7 +66,7 @@ const Services = () => {
             <div class="mt-6 sm:mt-0 sm:mb-12">
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex justify-end w-full mx-auto items-center">
-                  <div class="w-full sm:w-1/2 sm:pl-8">
+                  <div class="w-full md:w-1/2 md:pl-8">
                     <div
                       class="service-boxr"
                       data-aos="fade-left"
@@ -71,11 +75,16 @@ const Services = () => {
                       <h3 class="service-title">Maintenance de site Web</h3>
 
                       <p className="service-text">
-                        Nous pouvons créer un site web pour votre entreprise,
-                        mais vous ne savez pas à qui vous adresser ? Ne cherchez
-                        pas plus loin vous êtes au bon endroit ! DevAlot Digital
-                        vous propose de concevoir et d'héberger votre site web
-                        créer sur mesure de A à Z.
+                        Concevoir un site c’est bien, le maintenir c’est mieux.
+                        En effet, la maintenance permet d’améliorer les
+                        performances de votre site sur le long terme. Nous vous
+                        proposons donc des contrats de maintenance en fonction
+                        de vos besoins à un prix défiant toute concurrence.
+                        Notre service de maintenance comprend tout ce qui va
+                        dans le sens de l’amélioration du SEO (Search Engine
+                        Optimisation) de votre site ou plus simplement le
+                        référencement naturel de votre site sur les moteurs de
+                        recherche.
                       </p>
                     </div>
                   </div>
@@ -88,7 +97,7 @@ const Services = () => {
             <div class="mt-6 sm:mt-0 sm:mb-12">
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex justify-start w-full mx-auto items-center">
-                  <div class="w-full sm:w-1/2 sm:pr-8">
+                  <div class="w-full md:w-1/2 md:pr-8">
                     <div
                       class="service-boxl"
                       data-aos="fade-right"
@@ -97,11 +106,16 @@ const Services = () => {
                       <h3 class="service-title">Infographie & Design</h3>
 
                       <p className="service-text">
-                        Nous pouvons créer un site web pour votre entreprise,
-                        mais vous ne savez pas à qui vous adresser ? Ne cherchez
-                        pas plus loin vous êtes au bon endroit ! DevAlot Digital
-                        vous propose de concevoir et d'héberger votre site web
-                        créer sur mesure de A à Z.
+                        Toujours dans le soucis de vous satisfaire et
+                        d’améliorer l’image de votre entreprise, notre pôle
+                        Infographie & Design vous propose ses services afin de:
+                        créer des logos pour vos marques, créer de posts
+                        numériques pour vos réseaux sociaux, créer et imprimer
+                        des cartes de visites, flyers (liste à compléter) pour
+                        vos évènements L’équipe vous propose des offres adaptées
+                        à vos besoins et s’engage à vous mettre au centre de la
+                        réalisation de votre projet afin d’obtenir les résultats
+                        escomptés. Franchissez le pas, vous ne serez pas déçu!
                       </p>
                     </div>
                   </div>
@@ -114,7 +128,7 @@ const Services = () => {
             <div class="mt-6 sm:mt-0">
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex justify-end w-full mx-auto items-center">
-                  <div class="w-full sm:w-1/2 sm:pl-8">
+                  <div class="w-full md:w-1/2 md:pl-8">
                     <div
                       class="service-boxr"
                       data-aos="fade-left"
@@ -123,11 +137,14 @@ const Services = () => {
                       <h3 class="service-title">Composition musicale</h3>
 
                       <p className="service-text">
-                        Nous pouvons créer un site web pour votre entreprise,
-                        mais vous ne savez pas à qui vous adresser ? Ne cherchez
-                        pas plus loin vous êtes au bon endroit ! DevAlot Digital
-                        vous propose de concevoir et d'héberger votre site web
-                        créer sur mesure de A à Z.
+                        Pour animer vos publicités et autres événements
+                        nécessitant un jingle ou une musique, nous mettons à
+                        votre disposition un compositeur qui vous assistera dans
+                        votre projet de création. Après avoir compris votre
+                        idée, l’équipe se lancera dans la réalisation de votre
+                        projet afin de vous proposer un résultat satisfaisant,
+                        le tout à un prix défiant toute concurrence. Pour plus
+                        de détails contactez-nous ici.
                       </p>
                     </div>
                   </div>

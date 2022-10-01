@@ -8,25 +8,23 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
-import { HashLoader } from "react-spinners";
+import { FadeLoader } from "react-spinners";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   let [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    window.onload = () => {
-      setTimeout(() => {
-        setLoading(false);
-      }, 3000);
-    };
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
   }, []);
 
   return (
     <div className="font-perso box-border">
       {loading ? (
         <div className="fixed h-full w-full top-0 left-0 z-50 flex flex-col justify-center items-center bg-primary text-center">
-          <HashLoader size={40} color="#ffffff" loading={loading} />
+          <FadeLoader size={30} color="#ffffff" loading={loading} />
           {/* <p className="mt-2 text-white">Je me charge...</p> */}
         </div>
       ) : (
