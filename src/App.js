@@ -10,6 +10,9 @@ import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
 import { FadeLoader } from "react-spinners";
 
+import FloatingWhatsApp from "react-floating-whatsapp";
+import whatsappAvatar from "./assets/avatar.jpg";
+
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   let [loading, setLoading] = useState(true);
@@ -37,6 +40,20 @@ function App() {
           <Contact />
           <Footer />
           <Sidebar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+          <FloatingWhatsApp
+            phoneNumber="+221771276922"
+            accountName="DevAlot Digital"
+            avatar={whatsappAvatar}
+            statusMessage="Répond rapidement"
+            chatMessage="Bonjour, comment pouvons-nous vous aidez ?"
+            placeholder="Envoyez un message"
+            darkMode="true"
+            allowEsc="true"
+            allowClickAway="true"
+            notificationSound="true"
+            height={330}
+            className="z-50"
+          />
         </div>
       )}
     </div>
