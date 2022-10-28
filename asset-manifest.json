@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/devalot-website/static/css/main.c2cf4843.css",
-    "main.js": "/devalot-website/static/js/main.fb807513.js",
-    "static/media/teamwork.jpg": "/devalot-website/static/media/teamwork.3986de1d2f3f7fdbf90b.jpg",
-    "static/media/welcome.jpg": "/devalot-website/static/media/welcome.8bb8a69742f731f97acf.jpg",
-    "static/media/contact.jpg": "/devalot-website/static/media/contact.57f0853c9d6d3c62ef5f.jpg",
+    "main.css": "/devalot-website/static/css/main.0b33f19b.css",
+    "main.js": "/devalot-website/static/js/main.18f38bf6.js",
+    "static/media/welcome.webp": "/devalot-website/static/media/welcome.799578bc422c7899bd08.webp",
+    "static/media/teamwork.webp": "/devalot-website/static/media/teamwork.7c2f4422fee79e957be6.webp",
+    "static/media/contact.webp": "/devalot-website/static/media/contact.2a547b4ab5b674efafb6.webp",
     "static/media/mouhamad.jpg": "/devalot-website/static/media/mouhamad.cd5f35e8f11920fc94a1.jpg",
     "static/media/avatar.jpg": "/devalot-website/static/media/avatar.db50630816a57fef5a3f.jpg",
     "static/media/khadim.jpg": "/devalot-website/static/media/khadim.08fb3c04e34afbaafd5b.jpg",
     "static/media/linkedin-3d-blue.png": "/devalot-website/static/media/linkedin-3d-blue.8fceef5f64ba8824ffff.png",
     "index.html": "/devalot-website/index.html",
-    "main.c2cf4843.css.map": "/devalot-website/static/css/main.c2cf4843.css.map",
-    "main.fb807513.js.map": "/devalot-website/static/js/main.fb807513.js.map"
+    "main.0b33f19b.css.map": "/devalot-website/static/css/main.0b33f19b.css.map",
+    "main.18f38bf6.js.map": "/devalot-website/static/js/main.18f38bf6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2cf4843.css",
-    "static/js/main.fb807513.js"
+    "static/css/main.0b33f19b.css",
+    "static/js/main.18f38bf6.js"
   ]
 }
