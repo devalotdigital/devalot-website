@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import mouhamad from "../assets/mouhamad.JPG";
+import mouhamad from "../assets/mouhamad.jpg";
 import khadim from "../assets/khadim.jpg";
 
 import linkedin from "../assets/linkedin-3d-blue.png";
