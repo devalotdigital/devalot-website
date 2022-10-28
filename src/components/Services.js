@@ -26,23 +26,23 @@ const Services = () => {
       >
         Nous vous proposons divers services afin de satisfaire vos besoins !
       </p>
-      <div class="min-h-screen bg-primary py-6 flex flex-col justify-center sm:py-10">
-        <div class="py-3 max-w-[600px] md:max-w-[750px]  lg:max-w-[950px] xl:max-w-[1200px] 2xl:max-w-[1300px] sm:mx-auto w-full px-2 sm:px-0">
-          <div class="relative text-black antialiased  text-lg font-normal ">
+      <div className="min-h-screen bg-primary py-6 flex flex-col justify-center sm:py-10">
+        <div className="py-3 max-w-[600px] md:max-w-[750px]  lg:max-w-[950px] xl:max-w-[1200px] 2xl:max-w-[1300px] sm:mx-auto w-full px-2 sm:px-0">
+          <div className="relative text-black antialiased  text-lg font-normal ">
             {/* <!-- Vertical bar running through middle --> */}
-            <div class="hidden md:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+            <div className="hidden md:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
             {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
-            <div class="mt-6 sm:mt-0 sm:mb-12">
-              <div class="flex flex-col sm:flex-row items-center">
-                <div class="flex justify-start w-full mx-auto items-center">
-                  <div class="w-full md:w-1/2 md:pr-8">
+            <div className="mt-6 sm:mt-0 sm:mb-12">
+              <div className="flex flex-col sm:flex-row items-center">
+                <div className="flex justify-start w-full mx-auto items-center">
+                  <div className="w-full md:w-1/2 md:pr-8">
                     <div
-                      class="service-boxl"
+                      className="service-boxl"
                       data-aos="fade-right"
                       data-aos-duration="1200"
                     >
-                      <h3 class="service-title">Conception de site Web</h3>
+                      <h3 className="service-title">Conception de site Web</h3>
 
                       <p className="service-text">
                         DevAlot met à votre disposition une équipe de
@@ -58,21 +58,21 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <div class="service-number">1</div>
+                <div className="service-number">1</div>
               </div>
             </div>
 
             {/* <!-- Right section, set by justify-end and sm:pl-8 --> */}
-            <div class="mt-6 sm:mt-0 sm:mb-12">
-              <div class="flex flex-col sm:flex-row items-center">
-                <div class="flex justify-end w-full mx-auto items-center">
-                  <div class="w-full md:w-1/2 md:pl-8">
+            <div className="mt-6 sm:mt-0 sm:mb-12">
+              <div className="flex flex-col sm:flex-row items-center">
+                <div className="flex justify-end w-full mx-auto items-center">
+                  <div className="w-full md:w-1/2 md:pl-8">
                     <div
-                      class="service-boxr"
+                      className="service-boxr"
                       data-aos="fade-left"
                       data-aos-duration="1200"
                     >
-                      <h3 class="service-title">Maintenance de site Web</h3>
+                      <h3 className="service-title">Maintenance de site Web</h3>
 
                       <p className="service-text">
                         Concevoir un site c’est bien, le maintenir c’est mieux.
@@ -89,21 +89,21 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <div class="service-number">2</div>
+                <div className="service-number">2</div>
               </div>
             </div>
 
             {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
-            <div class="mt-6 sm:mt-0 sm:mb-12">
-              <div class="flex flex-col sm:flex-row items-center">
-                <div class="flex justify-start w-full mx-auto items-center">
-                  <div class="w-full md:w-1/2 md:pr-8">
+            <div className="mt-6 sm:mt-0 sm:mb-12">
+              <div className="flex flex-col sm:flex-row items-center">
+                <div className="flex justify-start w-full mx-auto items-center">
+                  <div className="w-full md:w-1/2 md:pr-8">
                     <div
-                      class="service-boxl"
+                      className="service-boxl"
                       data-aos="fade-right"
                       data-aos-duration="1200"
                     >
-                      <h3 class="service-title">Infographie & Design</h3>
+                      <h3 className="service-title">Infographie & Design</h3>
 
                       <p className="service-text">
                         Toujours dans le soucis de vous satisfaire et
@@ -120,21 +120,21 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <div class="service-number">3</div>
+                <div className="service-number">3</div>
               </div>
             </div>
 
             {/* <!-- Right section, set by justify-end and sm:pl-8 --> */}
-            <div class="mt-6 sm:mt-0">
-              <div class="flex flex-col sm:flex-row items-center">
-                <div class="flex justify-end w-full mx-auto items-center">
-                  <div class="w-full md:w-1/2 md:pl-8">
+            <div className="mt-6 sm:mt-0">
+              <div className="flex flex-col sm:flex-row items-center">
+                <div className="flex justify-end w-full mx-auto items-center">
+                  <div className="w-full md:w-1/2 md:pl-8">
                     <div
-                      class="service-boxr"
+                      className="service-boxr"
                       data-aos="fade-left"
                       data-aos-duration="1200"
                     >
-                      <h3 class="service-title">Composition musicale</h3>
+                      <h3 className="service-title">Composition musicale</h3>
 
                       <p className="service-text">
                         Pour animer vos publicités et autres événements
@@ -149,7 +149,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <div class="service-number">4</div>
+                <div className="service-number">4</div>
               </div>
             </div>
           </div>

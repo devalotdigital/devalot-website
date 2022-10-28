@@ -13,10 +13,10 @@ module.exports = {
         quaternary: "#807f80",
       },
       backgroundImage: {
-        welcome: "url(/src/assets/welcome.jpg)",
+        welcome: "url(/src/assets/webp/welcome.webp)",
         trustus: "url(/src/assets/trustus.jpg)",
-        contact: "url(/src/assets/contact.jpg)",
-        teamwork: "url(/src/assets/teamwork.jpg)",
+        contact: "url(/src/assets/webp/contact.webp)",
+        teamwork: "url(/src/assets/webp/teamwork.webp)",
         teamwork2: "url(/src/assets/man1.jpg)",
       },
       boxShadow: {
