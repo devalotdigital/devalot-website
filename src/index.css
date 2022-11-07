@@ -33,15 +33,15 @@
 }
 
 .service-boxl {
-  @apply lg:hover:bg-black lg:hover:-translate-x-10 lg:hover:text-white duration-500 bg-white shadow p-4  px-5 bg-white shadow cursor-pointer ease-in-out;
+  @apply duration-500 bg-white shadow p-4  px-5 bg-white shadow cursor-pointer ease-in-out;
 }
 
 .service-boxr {
-  @apply lg:hover:bg-black lg:hover:translate-x-10 lg:hover:text-white duration-500 bg-white shadow p-4 bg-white shadow  cursor-pointer;
+  @apply duration-500 bg-white shadow p-4 bg-white shadow  cursor-pointer;
 }
 
 .socials {
-  @apply hover:fill-tertiary hover:scale-125 duration-500;
+  @apply hover:fill-blue-200 hover:scale-125 duration-500;
 }
 
 .navlink {
@@ -53,7 +53,7 @@
 }
 
 .linkedin-card {
-  @apply flex flex-col gap-2 bg-white text-black max-w-[230px] w-full rounded-xl overflow-hidden;
+  @apply flex flex-col gap-2 bg-white text-black md:w-[230px] rounded-xl overflow-hidden;
 }
 
 .linkedin-avatar {

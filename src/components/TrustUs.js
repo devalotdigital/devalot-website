@@ -11,7 +11,7 @@ const TrustUs = () => {
     AOS.init({
       once: true,
       duration: 1000,
-      disable: "mobile",
+      // disable: "mobile",
     });
   }, []);
 
@@ -27,8 +27,12 @@ const TrustUs = () => {
           Faites nous confiance, <br className="hidden sm:block" /> on se charge
           de tout!
         </h2>
-        <div className="z-10 space-y-10  lg:space-x-0 flex flex-col items-center lg:flex-col lg:justify-between  w-full lg:w-fit">
-          <div className="card" data-aos="fade-left" data-aos-offset="200">
+        <div
+          className="z-10 space-y-10  lg:space-x-0 flex flex-col items-center lg:flex-col lg:justify-between  w-full lg:w-fit"
+          data-aos="fade-left"
+          data-aos-offset="200"
+        >
+          <div className="card">
             <div className="title-box">
               <h3 className="card-title">Efficacité</h3>
               <img
@@ -42,7 +46,7 @@ const TrustUs = () => {
             </p>
           </div>
 
-          <div className="card" data-aos="fade-left" data-aos-offset="200">
+          <div className="card">
             <div className="title-box">
               <h3 className="card-title">Créativité</h3>
               <img
@@ -56,7 +60,7 @@ const TrustUs = () => {
             </p>
           </div>
 
-          <div className="card" data-aos="fade-left" data-aos-offset="200">
+          <div className="card">
             <div className="title-box">
               <h3 className="card-title">Flexibilité</h3>
               <img src={pratique} alt="flexibilité" className="w-10 2xl:w-20" />

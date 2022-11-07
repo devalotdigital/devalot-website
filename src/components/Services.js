@@ -7,7 +7,7 @@ const Services = () => {
     AOS.init({
       once: true,
       duration: 1000,
-      disable: "mobile",
+      // disable: "mobile",
     });
   }, []);
 
@@ -150,6 +150,31 @@ const Services = () => {
                   </div>
                 </div>
                 <div className="service-number">4</div>
+              </div>
+            </div>
+            {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
+            <div className="mt-6 sm:mt-0 sm:mb-12">
+              <div className="flex flex-col sm:flex-row items-center">
+                <div className="flex justify-start w-full mx-auto items-center">
+                  <div className="w-full md:w-1/2 md:pr-8">
+                    <div
+                      className="service-boxl"
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                    >
+                      <h3 className="service-title">Community Management</h3>
+
+                      <p className="service-text">
+                        Nous pouvons vous aidez à animer votre communauté,
+                        conquérir de nouveaux clients et les fidéliser. DevAlot
+                        Digital est là pour assurer la communication de votre
+                        boîte, la gestion de vos réseaux sociaux et bien plus
+                        encore. Notre slogan "Vos problèmes, nos solutions"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="service-number">5</div>
               </div>
             </div>
           </div>

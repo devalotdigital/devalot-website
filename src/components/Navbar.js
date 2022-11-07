@@ -7,7 +7,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
     AOS.init({
       once: true,
       duration: 1000,
-      disable: "mobile",
+      // disable: "mobile",
     });
   }, []);
 
@@ -21,9 +21,9 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
       }`}
     >
       <nav className="font-bold flex justify-between items-center w-11/12 lg:w-10/12 mx-auto py-4 relative">
-        <h1 className="text-xl lg:text-2xl 2xl:text-5xl text-black">
+        <p className="text-xl lg:text-2xl 2xl:text-5xl text-black">
           DevAlot <span className="font-light text-primary">Digital</span>
-        </h1>
+        </p>
         <ul className="lg:text-[1em] 2xl:text-3xl text-xs text-black flex space-x-9 hidden lg:flex">
           <li>
             <a href="#accueil" className="navlink">

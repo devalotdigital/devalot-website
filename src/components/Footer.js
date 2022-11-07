@@ -6,7 +6,7 @@ const Footer = () => {
   useEffect(() => {
     AOS.init({
       once: true,
-      disable: "mobile",
+      // disable: "mobile",
     });
   }, []);
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="mx-auto bg-primary space-y-2">
         <div className=" text-white font-bold lg:w-10/12 mx-auto flex justify-center items-center py-3">
           <div className="flex space-x-3">
-            <a
+            {/* <a
               data-aos="fade-up"
               data-aos-duration="1100"
               href="https://www.facebook.com/GalsenDigitalAgency"
@@ -30,7 +30,7 @@ const Footer = () => {
               >
                 <path d="M47 7.18v32.64c0 3.955-3.225 7.18-7.18 7.18h-7.181V28.722h4.726c.666 0 1.227-.496 1.306-1.149l.483-3.916a1.265 1.265 0 0 0-.314-1.019 1.28 1.28 0 0 0-.979-.444H32.64v-4.569a2.619 2.619 0 0 1 2.611-2.611h2.611a1.31 1.31 0 0 0 1.306-1.306V9.296c0-.666-.523-1.228-1.188-1.293-.079-.013-1.92-.17-4.257-.17-5.744 0-8.916 3.42-8.916 9.622v4.74h-5.223a1.31 1.31 0 0 0-1.305 1.305v3.917a1.31 1.31 0 0 0 1.305 1.305h5.223V47H7.18C3.225 47 0 43.775 0 39.82V7.18C0 3.226 3.225 0 7.18 0h32.64C43.774 0 47 3.225 47 7.18z" />
               </svg>
-            </a>
+            </a> */}
             <a
               data-aos="fade-up"
               data-aos-duration="1200"

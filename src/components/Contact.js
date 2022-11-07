@@ -7,7 +7,7 @@ const Contact = () => {
     AOS.init({
       once: true,
       duration: 1000,
-      disable: "mobile",
+      // disable: "mobile",
     });
   }, []);
   return (
@@ -26,13 +26,7 @@ const Contact = () => {
             Alors, qu'attendez vous ?<br />
             <span className="font-thin">N'hésitez plus!</span>
           </h2>
-          <button
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            className="contact"
-          >
-            CONTACTEZ-NOUS
-          </button>
+          <button className="contact">CONTACTEZ-NOUS</button>
         </div>
       </div>
     </section>
