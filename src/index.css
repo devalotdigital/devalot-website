@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .card {
-  @apply bg-white flex-col p-5 lg:hover:border-l-8  lg:border-l-4 border-b-4  hover:border-b-8 lg:hover:border-b-0 lg:border-b-0 border-primary w-full max-w-[290px] lg:max-w-[300px] 2xl:max-w-[500px] cursor-pointer hover:bg-primary hover:text-white duration-500 text-base lg:hover:-translate-x-5;
+  @apply bg-white flex-col p-5 lg:hover:border-l-8  lg:border-l-4 border-b-4  hover:border-b-8 lg:hover:border-b-0 lg:border-b-0 border-primary w-full  lg:max-w-[300px] 2xl:max-w-[500px] cursor-pointer hover:bg-primary hover:text-white duration-500 text-base lg:hover:-translate-x-5;
 }
 
 .card-title {
