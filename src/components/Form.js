@@ -10,11 +10,11 @@ const Form = () => {
     });
   }, []);
   return (
-    <div className="bg-primary">
+    <div className="bg-primary py-5">
       <h2
         data-aos="fade-right"
         data-aos-duration="1100"
-        className="w-11/12 mx-auto pt-5 text-4xl md:text-4xl lg:text-5xl font-extrabold text-white leading-normal text-4xl sm:text-5xl  md:text-6xl lg:text-6xl 2xl:text-[6em] 2xl:leading-tight"
+        className="w-11/12 mx-auto pt-5 text-2xl text-center  md:text-4xl lg:text-4xl font-extrabold text-white leading-normal text-4xl sm:text-5xl  md:text-6xl lg:text-6xl 2xl:text-[6em] 2xl:leading-tight"
       >
         Demander un devis
       </h2>
@@ -27,7 +27,7 @@ const Form = () => {
         <input
           type="text"
           name="resp-name"
-          placeholder="Nom du responsable"
+          placeholder="Nom du responsable *"
           className="input"
           required
         />
@@ -51,9 +51,9 @@ const Form = () => {
           className="input"
         />
         <input
-          type="number"
+          type="text"
           name="numero"
-          placeholder="Numéro de téléphone"
+          placeholder="Numéro de téléphone *"
           required
           className="input"
         />
@@ -61,7 +61,7 @@ const Form = () => {
           name="message"
           cols="30"
           rows="10"
-          placeholder="Message"
+          placeholder="Message *"
           className="input"
         ></textarea>
         <input type="submit" value="ENVOYER" className="submit" />

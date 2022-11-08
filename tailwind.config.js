@@ -11,7 +11,7 @@ module.exports = {
         secondary: "#030067",
         tertiary: "#FB445B",
         quaternary: "#807f80",
-        blackish: "rgba(0,0,0,0.75)",
+        blueish: "#0E5581",
       },
       backgroundImage: {
         welcome: "url(/src/assets/welcome.jpg)",

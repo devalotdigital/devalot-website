@@ -2,10 +2,11 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import mouhamad from "../assets/mouhamad.jpg";
-import khadim from "../assets/khadim.jpg";
+// import mouhamad from "../assets/mouhamad.jpg";
+// import khadim from "../assets/khadim.jpg";
+// import linkedin from "../assets/linkedin-3d-blue.png";
 
-import linkedin from "../assets/linkedin-3d-blue.png";
+import who from "../assets/who.png";
 
 const WhoIs = () => {
   useEffect(() => {
@@ -27,17 +28,18 @@ const WhoIs = () => {
           <div className="text-sm lg:text-lg 2xl:text-3xl 2xl:mt-10 text-justify">
             <p className="2xl:leading-normal" data-aos="fade-up">
               DevAlot Digital est une agence digitale sénégalaise spécialisée
-              dans le web fondé par deux étudiants en cursus d'informatique.
+              dans le web fondé par un groupe de passionnés des métiers du
+              digital.
             </p>{" "}
             <br />
             <p className="2xl:leading-normal" data-aos="fade-up">
-              Le nom DevAlot, signifie litteralement : "Develop a lot" en
-              anglais, ce nom fait allusion à l'aide que l'on peut apporter aux
-              entreprises qui cherchent à se développer voir s'étendre du point
-              de vue digital mais il témoigne aussi de notre passion pour les
-              métiers du Web (notamment le developpement web), qui sont de nos
-              jours indispensables à l'expansion des entreprises qui se disent
-              modernes.
+              DevAlot, signifie litteralement : "Develop a lot" en anglais, cela
+              fait allusion à l'aide que l'on peut apporter aux entreprises qui
+              cherchent à se développer voir s'étendre du point de vue digital
+              mais il témoigne aussi de notre passion pour les métiers du Web
+              (notamment le developpement web), qui sont à notre humble avis
+              indispensables de nos jours à l'expansion des entreprises qui se
+              disent modernes.
             </p>
             <br />
             <p className="2xl:leading-normal" data-aos="fade-up">
@@ -47,57 +49,8 @@ const WhoIs = () => {
             </p>
           </div>
         </div>
-
-        <div
-          className="mb-3 lg:mb-0 flex flex-col md:flex-row gap-[20px] md:gap-[100px]"
-          data-aos="fade-right"
-        >
-          <div className="linkedin-card">
-            <div className="linkedin-header">
-              <img src={linkedin} alt="linkedin" className="w-[50px]" />
-            </div>
-            <div className="pb-4 pt-2 px-5">
-              <img
-                src={mouhamad}
-                alt="ordinateur"
-                className="linkedin-avatar"
-              />
-              <p className="block font-bold">Mouhamad Gueye</p>
-              <p className="text-sm mb-2 w-full">
-                IT Technician - Junior Full Stack Developper - Junior Graphic
-                Designer
-              </p>
-              <a
-                className="linkedin-btn"
-                href="https://sn.linkedin.com/in/mouhamad-gueye-b00b31229?trk=profile-badge"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Voir profil
-              </a>
-            </div>
-          </div>
-
-          <div className="linkedin-card">
-            <div className="linkedin-header">
-              <img src={linkedin} alt="linkedin" className="w-[50px]" />
-            </div>
-            <div className="pb-4 pt-2 px-5">
-              <img src={khadim} alt="ordinateur" className="linkedin-avatar" />
-              <p className="block font-bold">Khadim Gueye</p>
-              <p className="text-sm mb-2 w-full">
-                IT Technician -<br /> Junior Backend Developper
-              </p>
-              <a
-                className="linkedin-btn"
-                href="https://sn.linkedin.com/in/mouhamad-gueye-b00b31229?trk=profile-badge"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Voir profil
-              </a>
-            </div>
-          </div>
+        <div className="lg:w-1/2" data-aos="fade-right">
+          <img src={who} alt="" />
         </div>
       </div>
     </section>
