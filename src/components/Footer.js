@@ -9,13 +9,14 @@ const Footer = () => {
       // disable: "mobile",
     });
   }, []);
+
   return (
     <footer>
       <div className="mx-auto bg-primary space-y-2">
         <div className=" text-white font-bold lg:w-10/12 mx-auto flex justify-center items-center py-3">
           <div className="flex space-x-3">
             <a
-              data-aos="fade-up"
+              data-aos="fade-left"
               data-aos-duration="1100"
               href="https://www.facebook.com/DevAlotDigital"
               target="_blank"
@@ -32,7 +33,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              data-aos="fade-up"
+              data-aos="fade-left"
               data-aos-duration="1200"
               href="https://www.instagram.com/devalot.digital/"
               target="_blank"
@@ -49,7 +50,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              data-aos="fade-up"
+              data-aos="fade-left"
               data-aos-duration="1300"
               href="https://mobile.twitter.com/devalot.digital"
               target="_blank"
@@ -66,7 +67,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              data-aos="fade-up"
+              data-aos="fade-left"
               data-aos-duration="1400"
               href="https://www.linkedin.com/company/devalot-digital/"
               target="_blank"
@@ -86,7 +87,7 @@ const Footer = () => {
         </div>
 
         <div
-          data-aos="fade-up"
+          data-aos="fade-right"
           data-aos-duration="1000"
           className="flex flex-col lg:justify-between text-white lg:w-10/12 mx-auto text-center pb-3 "
         >

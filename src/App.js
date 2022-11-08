@@ -6,6 +6,7 @@ import WhoIs from "./components/WhoIs";
 import TrustUs from "./components/TrustUs";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Form from "./components/Form";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
 import { BarLoader } from "react-spinners";
@@ -38,6 +39,7 @@ function App() {
           <TrustUs />
           <Services />
           <Contact />
+          <Form />
           <Footer />
           <Sidebar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
           <FloatingWhatsApp

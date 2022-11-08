@@ -10,6 +10,7 @@ const Contact = () => {
       // disable: "mobile",
     });
   }, []);
+
   return (
     <section
       id="contacts"
