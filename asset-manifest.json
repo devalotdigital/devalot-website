@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/devalot-website/static/css/main.595cf561.css",
-    "main.js": "/devalot-website/static/js/main.500211bb.js",
+    "main.css": "/devalot-website/static/css/main.5ae6cb4b.css",
+    "main.js": "/devalot-website/static/js/main.1954a1e0.js",
     "static/media/teamwork.jpg": "/devalot-website/static/media/teamwork.3986de1d2f3f7fdbf90b.jpg",
     "static/media/welcome.jpg": "/devalot-website/static/media/welcome.8bb8a69742f731f97acf.jpg",
     "static/media/contact.jpg": "/devalot-website/static/media/contact.57f0853c9d6d3c62ef5f.jpg",
+    "static/media/sendmail.png": "/devalot-website/static/media/sendmail.5aca856c13c2f15ae37b.png",
     "static/media/who.png": "/devalot-website/static/media/who.bd2ede4dd0cb74191a4e.png",
     "static/media/avatar.jpg": "/devalot-website/static/media/avatar.db50630816a57fef5a3f.jpg",
     "index.html": "/devalot-website/index.html",
-    "main.595cf561.css.map": "/devalot-website/static/css/main.595cf561.css.map",
-    "main.500211bb.js.map": "/devalot-website/static/js/main.500211bb.js.map"
+    "main.5ae6cb4b.css.map": "/devalot-website/static/css/main.5ae6cb4b.css.map",
+    "main.1954a1e0.js.map": "/devalot-website/static/js/main.1954a1e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.595cf561.css",
-    "static/js/main.500211bb.js"
+    "static/css/main.5ae6cb4b.css",
+    "static/js/main.1954a1e0.js"
   ]
 }
