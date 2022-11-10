@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
+import PopUp from "./components/PopUp";
 import { BarLoader } from "react-spinners";
 
 import FloatingWhatsApp from "react-floating-whatsapp";
@@ -16,7 +17,8 @@ import whatsappAvatar from "./assets/avatar.jpg";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  let [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const [success, setSuccess] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -33,13 +35,14 @@ function App() {
         </div>
       ) : (
         <div>
+          {/* <PopUp success={success} /> */}
           <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
           <Welcome />
           <WhoIs />
           <TrustUs />
           <Services />
           <Contact />
-          <Form />
+          <Form success={success} setSuccess={setSuccess} />
           <Footer />
           <Sidebar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
           <FloatingWhatsApp
