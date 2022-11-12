@@ -29,7 +29,7 @@ const Services = () => {
         </p>
 
         <div className="min-h-screen bg-primary  flex flex-col justify-center sm:py-10">
-          <div className="py-3  md:max-w-[750px]  lg:max-w-[950px] xl:max-w-[1200px] 2xl:max-w-[1300px] sm:mx-auto w-full sm:px-0">
+          <div className="py-3   sm:mx-auto w-full sm:px-0">
             <div className="relative text-black antialiased  text-lg font-normal ">
               {/* <!-- Vertical bar running through middle --> */}
               <div className="hidden md:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
@@ -109,20 +109,20 @@ const Services = () => {
                         data-aos="fade-right"
                         data-aos-duration="1200"
                       >
-                        <h3 className="service-title">Infographie & Design</h3>
+                        <h3 className="service-title">Graphisme & Design</h3>
 
                         <p className="service-text">
                           Toujours dans le soucis de vous satisfaire et
                           d’améliorer l’image de votre entreprise, notre pôle
-                          Infographie & Design vous propose ses services afin
-                          de: créer des logos pour vos marques, créer de posts
-                          numériques pour vos réseaux sociaux, créer et imprimer
-                          des cartes de visites, flyers (liste à compléter) pour
-                          vos évènements L’équipe vous propose des offres
-                          adaptées à vos besoins et s’engage à vous mettre au
-                          centre de la réalisation de votre projet afin
-                          d’obtenir les résultats escomptés. Franchissez le pas,
-                          vous ne serez pas déçu!
+                          Graphisme & Design vous propose ses services afin de:
+                          créer des logos pour vos marques, créer de posts
+                          numériques pour vos réseaux sociaux pour votre
+                          community management, créer des designs de cartes de
+                          visites, flyers et maquettes de site web. L’équipe
+                          vous propose des offres adaptées à vos besoins et
+                          s’engage à vous mettre au centre de la réalisation de
+                          votre projet afin d’obtenir les résultats escomptés.
+                          Franchissez le pas, vous ne serez pas déçu!
                         </p>
                       </div>
                     </div>
@@ -149,8 +149,8 @@ const Services = () => {
                           votre disposition un compositeur qui vous assistera
                           dans votre projet de création. Après avoir compris
                           votre idée, l’équipe se lancera dans la réalisation de
-                          votre projet afin de vous proposer un résultat
-                          satisfaisant, le tout à un prix défiant toute
+                          votre projet afin de vous proposer un résultat fera
+                          votre satisfaction, le tout à un prix défiant toute
                           concurrence. Pour plus de détails contactez-nous ici.
                         </p>
                       </div>
@@ -172,12 +172,15 @@ const Services = () => {
                         <h3 className="service-title">Community Management</h3>
 
                         <p className="service-text">
-                          Nous pouvons vous aidez à animer votre communauté,
-                          conquérir de nouveaux clients et les fidéliser.
+                          Bien gérer son image digitale et être proche de sa
+                          clientèle cible est une chose primordiale, pour cela
+                          nous pouvons vous aidez à animer votre communauté sur
+                          Web, conquérir de nouveaux clients, améliorer la .
                           DevAlot Digital est là pour assurer la communication
-                          de votre boîte, la gestion de vos réseaux sociaux et
-                          bien plus encore. Notre slogan "Vos problèmes, nos
-                          solutions"
+                          de votre entreprise, la gestion de vos réseaux sociaux
+                          et bien plus encore. Plusieurs formules vous sont
+                          proposés à vous de voir ce qui vous tente le mieux.
+                          Notre slogan "Vos problèmes, nos solutions".
                         </p>
                       </div>
                     </div>
