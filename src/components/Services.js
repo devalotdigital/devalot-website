@@ -13,7 +13,7 @@ const Services = () => {
 
   return (
     <section id="services" className="pt-10 w-full h-full bg-primary">
-      <div className="w-11/12 mx-auto">
+      <div className="w-11/12 lg:w-10/12 mx-auto">
         <h2
           data-aos="fade-up"
           className="font-extrabold text-center text-3xl 2xl:text-6xl uppercase lg:text-4xl text-white mb-2"

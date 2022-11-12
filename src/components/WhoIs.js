@@ -21,7 +21,10 @@ const WhoIs = () => {
     <section id="whois" className="h-[100%] xl:h-[100vh] bg-primary">
       <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col-reverse xl:flex-row-reverse justify-between items-center py-10 h-full lg:space-x-4 lg:gap-10">
         <div className="xl:w-1/2 w-full">
-          <h2 className="font-extrabold 2xl:leading-tight text-2xl lg:text-5xl 2xl:text-[6em] pb-5 lg:pb-10 text-center">
+          <h2
+            className="font-extrabold 2xl:leading-tight text-2xl lg:text-5xl 2xl:text-[6em] pb-5 lg:pb-10 text-center lg:text-left"
+            data-aos="fade-up"
+          >
             A propos de
             <span className="text-white"> nous</span>
           </h2>

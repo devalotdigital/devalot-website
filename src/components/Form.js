@@ -5,7 +5,7 @@ import axios from "../api/axios";
 import sendmail from "../assets/sendmail.svg";
 const SENDMAIL_URL = "/sendmail";
 
-const Form = ({ setSuccess }) => {
+const Form = ({ setSuccess, setErrorMessage }) => {
   useEffect(() => {
     AOS.init({
       once: true,
@@ -19,10 +19,27 @@ const Form = ({ setSuccess }) => {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState(0);
   const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [error, setError] = useState(false);
+  const mailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const phoneRegex = /^(221|00221|\+221)?(77|78|75|70|76)[0-9]{7}$/;
+  const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
 
+  useEffect(() => {
+    console.log();
+  }, [email]);
   const handleSub = async (e) => {
     e.preventDefault();
+
+    if (
+      respName.length === 0 ||
+      entrepriseName.length === 0 ||
+      object === "" ||
+      mailRegex.test(email) === false ||
+      phoneRegex.test(phoneNumber) === false ||
+      message.length < 10
+    ) {
+      setError(true);
+    }
 
     try {
       const postMail = await axios.post(
@@ -43,6 +60,8 @@ const Form = ({ setSuccess }) => {
         }
       );
 
+      setErrorMessage("Mail envoyé avec succès !");
+      setSuccess(true);
       console.log(postMail);
     } catch (error) {
       if (!error.response) {
@@ -53,18 +72,17 @@ const Form = ({ setSuccess }) => {
       } else if (error.response?.status === 406) {
         setErrorMessage("Champ(s) obligatoire(s) manquants (*)");
       } else {
-        setErrorMessage("");
+        setErrorMessage("Echec de la connexion");
       }
     }
   };
 
   return (
-    <section className="bg-primary py-5">
+    <section className="bg-blueish py-5">
       <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col-reverse lg:flex-row justify-between items-center  h-full lg:space-x-4 lg:gap-10">
         <div className="lg:w-[50%] w-full">
           <h2
             data-aos="fade-right"
-            data-aos-duration="1100"
             className="font-extrabold 2xl:leading-tight text-2xl lg:text-5xl 2xl:text-[6em] text-center lg:text-left"
           >
             Ecrivez nous un mail !
@@ -72,60 +90,84 @@ const Form = ({ setSuccess }) => {
 
           <form
             onSubmit={handleSub}
-            data-aos="fade-left"
-            data-aos-duration="1100"
-            className="w-[100%] mt-5 mx-auto bg-primary flex flex-col items-center"
+            data-aos="fade-right"
+            className="w-[100%] mt-5 mx-auto flex flex-col items-center"
           >
             <input
               type="text"
               name="resp-name"
               onChange={(e) => setRespName(e.target.value)}
-              placeholder="Nom du responsable *"
+              placeholder="Nom du responsable (*)"
               className="input"
-              required
             />
+            {error && nameRegex.test(respName) === false ? (
+              <span className="error">Nom renseigné invalide</span>
+            ) : null}
+
             <input
               type="text"
               name="entreprise-name"
               onChange={(e) => setEntrepriseName(e.target.value)}
-              placeholder="Nom de l'entreprise*"
+              placeholder="Nom de l'entreprise (*)"
               className="input"
             />
+            {error && nameRegex.test(entrepriseName) === false ? (
+              <span className="error">Nom de l'entreprise invalide</span>
+            ) : null}
             <input
               type="text"
               name="object"
               onChange={(e) => setObject(e.target.value)}
-              placeholder="Objet"
+              placeholder="Objet (*)"
               className="input"
             />
+            {error && object.length === 0 ? (
+              <span className="error">Ce champ ne peut être vide</span>
+            ) : null}
             <input
               type="email"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email*"
-              required
+              placeholder="Email (*)"
               className="input"
             />
+            {error && mailRegex.test(email) === false ? (
+              <span className="error">Adresse mail invalide</span>
+            ) : null}
+
             <input
               type="text"
               name="numero"
               onChange={(e) => setPhoneNumber(e.target.value)}
-              placeholder="Numéro de téléphone"
-              required
+              placeholder="Téléphone (optionel)"
               className="input"
             />
+            {error && phoneRegex.test(phoneNumber) === false ? (
+              <span className="error">
+                Numéro téléphone incorrect (format: 998887766)
+              </span>
+            ) : null}
+
             <textarea
               name="message"
               onChange={(e) => setMessage(e.target.value)}
               cols="30"
               rows="5"
-              placeholder="Message*"
+              placeholder="Message(*)"
               className="input"
             ></textarea>
+
+            {error && message.length < 10 ? (
+              <span className="error">
+                Ce champ ne peut être vide et doit comporter plus de 10
+                caractères
+              </span>
+            ) : null}
+
             <input type="submit" value="ENVOYER" className="submit" />
           </form>
         </div>
-        <div className="w-[40%]" data-aos="fade-right">
+        <div className="w-[40%]" data-aos="fade-left">
           <img src={sendmail} alt="mail sending" />
         </div>
       </div>

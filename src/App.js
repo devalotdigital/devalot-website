@@ -19,12 +19,21 @@ function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [success, setSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSuccess(false);
+    }, 2000);
+  }, [success]);
+
+  console.log(errorMessage);
 
   return (
     <div className="font-perso box-border">
@@ -35,14 +44,18 @@ function App() {
         </div>
       ) : (
         <div>
-          {/* <PopUp success={success} /> */}
+          <PopUp success={success} errorMessage={errorMessage} />
           <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
           <Welcome />
           <WhoIs />
           <TrustUs />
           <Services />
           <Contact />
-          <Form success={success} setSuccess={setSuccess} />
+          <Form
+            success={success}
+            setSuccess={setSuccess}
+            setErrorMessage={setErrorMessage}
+          />
           <Footer />
           <Sidebar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
           <FloatingWhatsApp
