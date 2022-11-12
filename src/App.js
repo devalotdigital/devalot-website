@@ -13,7 +13,7 @@ import PopUp from "./components/PopUp";
 import { BarLoader } from "react-spinners";
 
 import FloatingWhatsApp from "react-floating-whatsapp";
-import whatsappAvatar from "./assets/avatar.jpg";
+import whatsappAvatar from "./assets/avatar.png";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);

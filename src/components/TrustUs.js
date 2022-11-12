@@ -16,9 +16,8 @@ const TrustUs = () => {
   }, []);
 
   return (
-    <section className="py-10 bg-teamwork bg-center bg-cover bg-no-repeat relative  lg:h-[100vh] w-full ">
-      <div className="absolute top-0  bg-transparent h-full w-full opacity-30"></div>
-      <div className="lg:w-10/12 w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between items-center h-full space-y-10 lg:space-y-0 lg:space-x-0 ">
+    <section className="py-10 bg-teamwork bg-center bg-cover bg-no-repeat relative  w-full">
+      <div className="lg:w-10/12 w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between items-center h-full space-y-10 lg:space-y-0 lg:space-x-0">
         <h2
           data-aos-duration="800"
           data-aos="fade-right"

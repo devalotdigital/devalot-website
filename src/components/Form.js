@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "../api/axios";
-import sendmail from "../assets/sendmail.png";
+import sendmail from "../assets/sendmail.svg";
 const SENDMAIL_URL = "/sendmail";
 
 const Form = ({ setSuccess }) => {
@@ -60,14 +60,14 @@ const Form = ({ setSuccess }) => {
 
   return (
     <section className="bg-primary py-5">
-      <div className="flex justify-between items-center w-11/12 mx-auto">
+      <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col-reverse lg:flex-row justify-between items-center  h-full lg:space-x-4 lg:gap-10">
         <div className="lg:w-[50%] w-full">
           <h2
             data-aos="fade-right"
             data-aos-duration="1100"
-            className="w-11/12 mx-auto pt-5 text-2xl text-center  md:text-4xl lg:text-4xl font-extrabold text-white leading-normal text-4xl sm:text-5xl  md:text-6xl lg:text-6xl 2xl:text-[6em] 2xl:leading-tight"
+            className="font-extrabold 2xl:leading-tight text-2xl lg:text-5xl 2xl:text-[6em] text-center lg:text-left"
           >
-            Demander un devis
+            Ecrivez nous un mail !
           </h2>
 
           <form
@@ -118,15 +118,15 @@ const Form = ({ setSuccess }) => {
               name="message"
               onChange={(e) => setMessage(e.target.value)}
               cols="30"
-              rows="10"
+              rows="5"
               placeholder="Message*"
               className="input"
             ></textarea>
             <input type="submit" value="ENVOYER" className="submit" />
           </form>
         </div>
-        <div className="w-[50%] hidden lg:block">
-          <img src={sendmail} alt="image mail sending" />
+        <div className="w-[40%]" data-aos="fade-right">
+          <img src={sendmail} alt="mail sending" />
         </div>
       </div>
     </section>
