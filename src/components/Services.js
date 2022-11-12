@@ -49,7 +49,7 @@ const Services = () => {
                         </h3>
 
                         <p className="service-text">
-                          DevAlot met à votre disposition une équipe de
+                          DevAlot Digital met à votre disposition une équipe de
                           développeurs passionnés par leur travail et prêt à
                           relever le défis pour concevoir le site web de vos
                           rêves. Des sites one page aux sites e-commerce en
@@ -82,15 +82,15 @@ const Services = () => {
 
                         <p className="service-text">
                           Concevoir un site c’est bien, le maintenir c’est
-                          mieux. En effet, la maintenance permet d’améliorer les
-                          performances de votre site sur le long terme. Nous
-                          vous proposons donc des contrats de maintenance en
-                          fonction de vos besoins à un prix défiant toute
-                          concurrence. Notre service de maintenance comprend
-                          tout ce qui va dans le sens de l’amélioration du SEO
-                          (Search Engine Optimisation) de votre site ou plus
-                          simplement le référencement naturel de votre site sur
-                          les moteurs de recherche.
+                          mieux. En effet, le travail de maintenance permet de
+                          suivre votre site et d’améliorer ses performances de
+                          sur le long terme. Nous vous proposons donc des
+                          contrats de maintenance en fonction de vos besoins à
+                          un prix défiant toute concurrence. Notre service de
+                          maintenance comprend tout ce qui va dans le sens de
+                          l’amélioration du SEO (Search Engine Optimisation) de
+                          votre site ou plus simplement le référencement naturel
+                          de votre site sur les moteurs de recherche.
                         </p>
                       </div>
                     </div>
@@ -109,20 +109,20 @@ const Services = () => {
                         data-aos="fade-right"
                         data-aos-duration="1200"
                       >
-                        <h3 className="service-title">Graphisme & Design</h3>
+                        <h3 className="service-title">Graphisme & Designing</h3>
 
                         <p className="service-text">
                           Toujours dans le soucis de vous satisfaire et
-                          d’améliorer l’image de votre entreprise, notre pôle
-                          Graphisme & Design vous propose ses services afin de:
-                          créer des logos pour vos marques, créer de posts
-                          numériques pour vos réseaux sociaux pour votre
-                          community management, créer des designs de cartes de
-                          visites, flyers et maquettes de site web. L’équipe
-                          vous propose des offres adaptées à vos besoins et
-                          s’engage à vous mettre au centre de la réalisation de
-                          votre projet afin d’obtenir les résultats escomptés.
-                          Franchissez le pas, vous ne serez pas déçu!
+                          d’améliorer l’image de votre entreprise, notre équipe
+                          vous propose ses services afin de: créer des logos
+                          pour vos marques, des posts numériques pour vos
+                          réseaux sociaux (voir community management), créer des
+                          designs de cartes de visites, flyers et maquettes de
+                          site web. L’équipe vous propose des offres adaptées à
+                          vos besoins et s’engage à vous mettre au centre de la
+                          réalisation de votre projet afin d’obtenir les
+                          résultats escomptés. Franchissez le pas, vous ne serez
+                          pas déçu!
                         </p>
                       </div>
                     </div>
@@ -141,17 +141,23 @@ const Services = () => {
                         data-aos="fade-left"
                         data-aos-duration="1200"
                       >
-                        <h3 className="service-title">Composition musicale</h3>
-
+                        <h3 className="service-title">Community Management</h3>
                         <p className="service-text">
-                          Pour animer vos publicités et autres événements
-                          nécessitant un jingle ou une musique, nous mettons à
-                          votre disposition un compositeur qui vous assistera
-                          dans votre projet de création. Après avoir compris
-                          votre idée, l’équipe se lancera dans la réalisation de
-                          votre projet afin de vous proposer un résultat fera
-                          votre satisfaction, le tout à un prix défiant toute
-                          concurrence. Pour plus de détails contactez-nous ici.
+                          Bien gérer son image digitale et être proche de sa
+                          clientèle cible est une chose primordiale, pour cela
+                          nous pouvons vous aidez à animer votre communauté sur
+                          le Web et conquérir de nouveaux clients. Nous sommes
+                          là pour assurer la communication de votre entreprise
+                          et la bonne gestion de vos réseaux sociaux. Vous
+                          pouvez jeter un coup d'oeil aux différentes formules
+                          proposées{" "}
+                          <a
+                            href="www.instagram.com/devalot.digital"
+                            className="text-primary"
+                          >
+                            ici
+                          </a>{" "}
+                          et choisir celle qui vous parle le plus.
                         </p>
                       </div>
                     </div>
@@ -169,18 +175,17 @@ const Services = () => {
                         data-aos="fade-right"
                         data-aos-duration="1200"
                       >
-                        <h3 className="service-title">Community Management</h3>
+                        <h3 className="service-title">Composition musique</h3>
 
                         <p className="service-text">
-                          Bien gérer son image digitale et être proche de sa
-                          clientèle cible est une chose primordiale, pour cela
-                          nous pouvons vous aidez à animer votre communauté sur
-                          Web, conquérir de nouveaux clients, améliorer la .
-                          DevAlot Digital est là pour assurer la communication
-                          de votre entreprise, la gestion de vos réseaux sociaux
-                          et bien plus encore. Plusieurs formules vous sont
-                          proposés à vous de voir ce qui vous tente le mieux.
-                          Notre slogan "Vos problèmes, nos solutions".
+                          Pour animer vos publicités et autres événements
+                          nécessitant un jingle ou une musique, nous mettons à
+                          votre disposition un compositeur qui vous assistera
+                          dans votre projet de création. Après avoir compris
+                          votre idée, l’équipe se lancera dans la réalisation de
+                          votre projet afin de vous proposer un résultat fera
+                          votre satisfaction, le tout à un prix défiant toute
+                          concurrence. Pour plus de détails contactez-nous.
                         </p>
                       </div>
                     </div>

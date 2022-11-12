@@ -33,11 +33,11 @@
 }
 
 .service-boxl {
-  @apply duration-500 bg-white shadow p-4  px-5 bg-white shadow cursor-pointer ease-in-out;
+  @apply bg-white  p-4  px-5 bg-white;
 }
 
 .service-boxr {
-  @apply duration-500 bg-white shadow p-4 bg-white shadow  cursor-pointer;
+  @apply bg-white  p-4 bg-white;
 }
 
 .socials {
