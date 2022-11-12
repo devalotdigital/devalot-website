@@ -45,7 +45,7 @@
 }
 
 .navlink {
-  @apply hover:text-primary duration-150 uppercase;
+  @apply hover:text-primary font-semibold duration-150 uppercase;
 }
 
 .contact {

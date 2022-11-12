@@ -24,9 +24,6 @@ const Form = ({ setSuccess, setErrorMessage }) => {
   const phoneRegex = /^(221|00221|\+221)?(77|78|75|70|76)[0-9]{7}$/;
   const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
 
-  useEffect(() => {
-    console.log();
-  }, [email]);
   const handleSub = async (e) => {
     e.preventDefault();
 
@@ -38,54 +35,56 @@ const Form = ({ setSuccess, setErrorMessage }) => {
       phoneRegex.test(phoneNumber) === false ||
       message.length < 10
     ) {
+      setErrorMessage("Champ(s) renseigné(s) invalide(s)");
       setError(true);
-    }
-
-    try {
-      const postMail = await axios.post(
-        SENDMAIL_URL,
-        JSON.stringify({
-          respName,
-          entrepriseName,
-          object,
-          email,
-          phoneNumber,
-          message,
-        }),
-        {
-          headers: {
-            "Content-Type": "application/json",
-            withCredentials: true,
-          },
-        }
-      );
-
-      setErrorMessage("Mail envoyé avec succès !");
       setSuccess(true);
-      console.log(postMail);
-    } catch (error) {
-      if (!error.response) {
-        setErrorMessage("Le serveur ne répond pas");
-      } else if (error.response.status === 400) {
-        setErrorMessage("Echec de l'envoie");
-        setSuccess(false);
-      } else if (error.response?.status === 406) {
-        setErrorMessage("Champ(s) obligatoire(s) manquants (*)");
-      } else {
-        setErrorMessage("Echec de la connexion");
+    } else {
+      try {
+        const postMail = await axios.post(
+          SENDMAIL_URL,
+          JSON.stringify({
+            respName,
+            entrepriseName,
+            object,
+            email,
+            phoneNumber,
+            message,
+          }),
+          {
+            headers: {
+              "Content-Type": "application/json",
+              withCredentials: true,
+            },
+          }
+        );
+
+        setErrorMessage("Mail envoyé avec succès !");
+        setSuccess(true);
+        console.log(postMail.status);
+      } catch (error) {
+        if (!error.response) {
+          setErrorMessage("Le serveur ne répond pas");
+        } else if (error.response.status === 400) {
+          setErrorMessage("Echec de l'envoie");
+          setSuccess(false);
+        } else if (error.response?.status === 406) {
+          setErrorMessage("Champ(s) obligatoire(s) manquants (*)");
+        } else {
+          setErrorMessage("Echec de la connexion");
+        }
       }
     }
   };
 
   return (
-    <section className="bg-blueish py-5">
+    <section className="bg-blueish py-10">
       <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col-reverse lg:flex-row justify-between items-center  h-full lg:space-x-4 lg:gap-10">
         <div className="lg:w-[50%] w-full">
           <h2
             data-aos="fade-right"
             className="font-extrabold 2xl:leading-tight text-2xl lg:text-5xl 2xl:text-[6em] text-center lg:text-left"
           >
-            Ecrivez nous un mail !
+            Ecrivez-nous un mail !
           </h2>
 
           <form
@@ -139,12 +138,12 @@ const Form = ({ setSuccess, setErrorMessage }) => {
               type="text"
               name="numero"
               onChange={(e) => setPhoneNumber(e.target.value)}
-              placeholder="Téléphone (optionel)"
+              placeholder="Téléphone (*)"
               className="input"
             />
             {error && phoneRegex.test(phoneNumber) === false ? (
               <span className="error">
-                Numéro téléphone incorrect (format: 998887766)
+                Numéro téléphone incorrect (format Sénégal)
               </span>
             ) : null}
 

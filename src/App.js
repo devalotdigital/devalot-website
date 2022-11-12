@@ -33,8 +33,6 @@ function App() {
     }, 2000);
   }, [success]);
 
-  console.log(errorMessage);
-
   return (
     <div className="font-perso box-border">
       {loading ? (
