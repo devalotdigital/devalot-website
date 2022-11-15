@@ -1,22 +1,12 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 import creativite from "../assets/créativité.png";
 import efficacite from "../assets/efficacité.png";
 import pratique from "../assets/pratique.png";
 
 const TrustUs = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      duration: 1000,
-      // disable: "mobile",
-    });
-  }, []);
-
   return (
-    <section className="py-10 bg-teamwork bg-center bg-cover bg-no-repeat relative  w-full h-[100vh]">
+    <section className="py-10 bg-teamwork bg-center bg-cover bg-no-repeat relative  w-full xl:h-[100vh]  overflow-x-hidden">
       <div className="lg:w-10/12 w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between items-center h-full space-y-10 lg:space-y-0 lg:space-x-0">
         <h2
           data-aos-duration="800"

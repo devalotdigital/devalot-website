@@ -1,24 +1,10 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-// import mouhamad from "../assets/mouhamad.jpg";
-// import khadim from "../assets/khadim.jpg";
-// import linkedin from "../assets/linkedin-3d-blue.png";
+import React from "react";
 
 import who from "../assets/who.svg";
 
 const WhoIs = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      duration: 1500,
-      // disable: "mobile",
-    });
-  }, []);
-
   return (
-    <section id="whois" className="h-[100%] xl:h-[100vh] bg-primary">
+    <section id="whois" className="h-[100%] xl:h-[100vh] bg-primary ">
       <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col-reverse xl:flex-row-reverse justify-between items-center py-10 h-full lg:space-x-4 lg:gap-10">
         <div className="xl:w-1/2 w-full">
           <h2

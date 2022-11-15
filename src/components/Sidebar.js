@@ -2,9 +2,9 @@ import React from "react";
 
 const Sidebar = ({ isNavOpen, setIsNavOpen }) => {
   const open =
-    "fixed top-0 right-0 duration-700 font-white backdrop-blur-3xl  z-50";
+    "fixed top-0 right-0 duration-700 font-white backdrop-blur-3xl z-50";
   const close =
-    "fixed top-0 -right-[1000px] opacity-0 duration-700 font-white backdrop-blur-3xl  z-50";
+    " fixed top-0 -right-[1000px] opacity-0 duration-700 font-white backdrop-blur-3xl  z-50";
   return (
     <div className={`${isNavOpen ? open : close}`}>
       <ul className="flex flex-col items-center font-extrabold h-[100vh] w-[100vw] text-center text-white justify-center space-y-10 lg:hidden">

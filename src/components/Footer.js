@@ -1,15 +1,6 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 const Footer = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      // disable: "mobile",
-    });
-  }, []);
-
   return (
     <footer>
       <div className="mx-auto bg-primary space-y-2 py-5">
@@ -33,8 +24,8 @@ const Footer = () => {
               </svg>
             </a> */}
             <a
-              // data-aos="fade-left"
-              // data-aos-duration="1200"
+              data-aos="fade-left"
+              data-aos-duration="1200"
               href="https://www.instagram.com/devalot.digital/"
               target="_blank"
               rel="noreferrer"
@@ -50,8 +41,8 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              // data-aos="fade-left"
-              // data-aos-duration="1300"
+              data-aos="fade-left"
+              data-aos-duration="1300"
               href="https://mobile.twitter.com/devalot.digital"
               target="_blank"
               rel="noreferrer"
@@ -67,8 +58,8 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              // data-aos="fade-left"
-              // data-aos-duration="1400"
+              data-aos="fade-left"
+              data-aos-duration="1400"
               href="https://www.linkedin.com/company/devalot-digital/"
               target="_blank"
               rel="noreferrer"
@@ -87,7 +78,7 @@ const Footer = () => {
         </div>
 
         <div
-          // data-aos="fade-right"
+          // data-aos="zoom-in"
           // data-aos-duration="1000"
           className="flex flex-col text-blueish font-bold lg:justify-between text-white lg:w-10/12 mx-auto text-center pb-3 "
         >

@@ -1,19 +1,10 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 const Welcome = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      duration: 1500,
-      // disable: "mobile",
-    });
-  }, []);
   return (
     <section
       id="accueil"
-      className="bg-welcome h-[100vh] bg-center bg-cover w-full text-white "
+      className="bg-welcome h-[100vh] bg-center bg-cover w-full text-white overflow-x-hidden"
     >
       <div className="absolute h-full w-full bg-transparent opacity-30"></div>
       <div className="lg:w-10/12 w-11/12 mx-auto flex flex-col justify-center h-full">

@@ -15,6 +15,9 @@ import { BarLoader } from "react-spinners";
 import FloatingWhatsApp from "react-floating-whatsapp";
 import whatsappAvatar from "./assets/avatar.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -33,8 +36,17 @@ function App() {
     }, 2000);
   }, [success]);
 
+  useEffect(() => {
+    AOS.init({
+      once: false,
+      duration: 1000,
+      mirror: true,
+      // disable: "mobile",
+    });
+  }, []);
+
   return (
-    <div className="font-perso box-border">
+    <div className="font-perso box-border overflow-hidden">
       {loading ? (
         <div className="fixed h-full w-full top-0 left-0 z-50 flex flex-col justify-center items-center bg-primary text-center">
           <BarLoader size={30} color="#ffffff" loading={loading} />

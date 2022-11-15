@@ -1,18 +1,10 @@
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
+
 import axios from "../api/axios";
 import sendmail from "../assets/sendmail.svg";
 const SENDMAIL_URL = "/sendmail";
 
 const Form = ({ setSuccess, setErrorMessage }) => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      // disable: "mobile",
-    });
-  }, []);
-
   const [respName, setRespName] = useState("");
   const [entrepriseName, setEntrepriseName] = useState("");
   const [object, setObject] = useState("");

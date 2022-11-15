@@ -1,18 +1,11 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 const Services = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      duration: 1000,
-      // disable: "mobile",
-    });
-  }, []);
-
   return (
-    <section id="services" className="pt-10 w-full h-full bg-primary">
+    <section
+      id="services"
+      className="pt-10 w-full h-full bg-primary overflow-x-hidden"
+    >
       <div className="w-11/12 lg:w-10/12 mx-auto">
         <h2
           data-aos="fade-up"

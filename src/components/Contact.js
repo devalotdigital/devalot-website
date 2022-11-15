@@ -1,16 +1,6 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 const Contact = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      duration: 1000,
-      // disable: "mobile",
-    });
-  }, []);
-
   return (
     <section
       id="contacts"
