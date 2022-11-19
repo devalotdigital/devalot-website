@@ -69,7 +69,7 @@ function App() {
           <Footer />
           <Sidebar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
           <FloatingWhatsApp
-            phoneNumber="+221771276922"
+            phoneNumber="+221764755226"
             accountName="DevAlot Digital"
             avatar={whatsappAvatar}
             statusMessage="Répond rapidement"

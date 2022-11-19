@@ -10,7 +10,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
           : "fixed top-0 backdrop-blur-3xl bg-white duration-300 w-full text-white z-20 lg:px-0 overflow-hidden"
       }`}
     >
-      <nav className="font-bold flex justify-between items-center w-11/12 lg:w-10/12 mx-auto py-2 relative">
+      <nav className="font-bold flex justify-between items-center w-11/12 lg:w-10/12 mx-auto py-2 relative ">
         <p className="text-xl lg:text-2xl 2xl:text-5xl text-black">
           {/* DevAlot <span className="font-light text-primary">Digital</span> */}
           <img src={logo} alt="" className="w-[45px]" />

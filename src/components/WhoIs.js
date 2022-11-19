@@ -14,10 +14,10 @@ const WhoIs = () => {
             A propos de
             <span className="text-white"> nous</span>
           </h2>
-          <div className="text-sm lg:text-lg 2xl:text-3xl 2xl:mt-10 text-justify">
+          <div className="text-sm lg:text-base 2xl:text-3xl 2xl:mt-10 text-justify">
             <p className="2xl:leading-normal" data-aos="fade-up">
               DevAlot Digital est une agence digitale sénégalaise spécialisée
-              dans le web fondé par un groupe de passionnés des métiers du
+              dans le web fondée par un groupe de passionnés des métiers du
               digital.
             </p>{" "}
             <br />
@@ -32,9 +32,9 @@ const WhoIs = () => {
             </p>
             <br />
             <p className="2xl:leading-normal" data-aos="fade-up">
-              C'est ainsi que le 8 juin 2022 nous avons décider de nous lancer
-              dans cette aventure qui nous excite plus que tout. Nous espérons
-              vous compter parmi nos futurs clients !
+              C'est ainsi que nous avons décider de nous lancer dans cette
+              aventure qui nous excite plus que tout. Nous espérons vous compter
+              parmi nos futurs clients !
             </p>
           </div>
         </div>

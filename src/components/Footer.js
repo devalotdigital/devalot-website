@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <div className="mx-auto bg-primary space-y-2 py-5">
+      <div className="mx-auto bg-blueish space-y-2 py-5">
         <div className=" text-white font-bold lg:w-10/12 mx-auto flex justify-center items-center py-3">
           <div className="flex space-x-3">
             {/* <a
@@ -80,7 +80,7 @@ const Footer = () => {
         <div
           // data-aos="zoom-in"
           // data-aos-duration="1000"
-          className="flex flex-col text-blueish font-bold lg:justify-between text-white lg:w-10/12 mx-auto text-center pb-3 "
+          className="flex flex-col text-white font-bold lg:justify-between text-white lg:w-10/12 mx-auto text-center pb-3 "
         >
           <p className="text-xs md:text-sm pb-2 lg:pb-0 2xl:text-2xl">
             Copyright © 2022 DevAlot Digital. Tous droits réservés.

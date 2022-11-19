@@ -17,7 +17,18 @@ const Contact = () => {
             Alors, qu'attendez vous ?<br />
             <span className="font-thin">N'hésitez plus!</span>
           </h2>
-          <button className="contact">CONTACTEZ-NOUS</button>
+          <button
+            className="contact"
+            onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=221764755226&text=Bonjour%20DevAlot,%20",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
+            CONTACTEZ-NOUS
+          </button>
         </div>
       </div>
     </section>

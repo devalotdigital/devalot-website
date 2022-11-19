@@ -42,15 +42,15 @@ const Services = () => {
                         </h3>
 
                         <p className="service-text">
-                          DevAlot Digital met à votre disposition une équipe de
-                          développeurs passionnés par leur travail et prêt à
+                          Nous mettons à votre disposition une équipe de
+                          développeurs passionnés par leur travail et prêts à
                           relever le défis pour concevoir le site web de vos
                           rêves. Des sites one page aux sites e-commerce en
                           passant par les sites vitrines, DevAlot se donne pour
                           mission de répondre à vos besoins afin de vous
-                          satisfaire. De plus pour un site vitrine commandé on
-                          vous offre une période de suivi de votre site de 2
-                          semaines pour suivre le comportement de votre site.
+                          satisfaire. Après création, nous vous proposons de
+                          suivre le comportement de votre site pour une durée de
+                          1 mois.
                         </p>
                       </div>
                     </div>
@@ -79,11 +79,9 @@ const Services = () => {
                           suivre votre site et d’améliorer ses performances de
                           sur le long terme. Nous vous proposons donc des
                           contrats de maintenance en fonction de vos besoins à
-                          un prix défiant toute concurrence. Notre service de
+                          des prix défiants toute concurrence. Notre service de
                           maintenance comprend tout ce qui va dans le sens de
-                          l’amélioration du SEO (Search Engine Optimisation) de
-                          votre site ou plus simplement le référencement naturel
-                          de votre site sur les moteurs de recherche.
+                          l’amélioration des performances de votre site.
                         </p>
                       </div>
                     </div>
@@ -109,13 +107,11 @@ const Services = () => {
                           d’améliorer l’image de votre entreprise, notre équipe
                           vous propose ses services afin de: créer des logos
                           pour vos marques, des posts numériques pour vos
-                          réseaux sociaux (voir community management), créer des
-                          designs de cartes de visites, flyers et maquettes de
-                          site web. L’équipe vous propose des offres adaptées à
-                          vos besoins et s’engage à vous mettre au centre de la
-                          réalisation de votre projet afin d’obtenir les
-                          résultats escomptés. Franchissez le pas, vous ne serez
-                          pas déçu!
+                          réseaux sociaux, créer des designs de cartes de
+                          visites, flyers et maquettes de site web. L’équipe
+                          vous propose des offres adaptées à vos besoins et
+                          s’engage à vous mettre au centre de la réalisation de
+                          votre projet afin d’obtenir les résultats escomptés.
                         </p>
                       </div>
                     </div>
@@ -141,16 +137,8 @@ const Services = () => {
                           nous pouvons vous aidez à animer votre communauté sur
                           le Web et conquérir de nouveaux clients. Nous sommes
                           là pour assurer la communication de votre entreprise
-                          et la bonne gestion de vos réseaux sociaux. Vous
-                          pouvez jeter un coup d'oeil aux différentes formules
-                          proposées{" "}
-                          <a
-                            href="www.instagram.com/devalot.digital"
-                            className="text-primary"
-                          >
-                            ici
-                          </a>{" "}
-                          et choisir celle qui vous parle le plus.
+                          et la bonne gestion de vos réseaux
+                          sociaux.Contactez-nous pour plus de détails.
                         </p>
                       </div>
                     </div>
@@ -176,9 +164,10 @@ const Services = () => {
                           votre disposition un compositeur qui vous assistera
                           dans votre projet de création. Après avoir compris
                           votre idée, l’équipe se lancera dans la réalisation de
-                          votre projet afin de vous proposer un résultat fera
-                          votre satisfaction, le tout à un prix défiant toute
-                          concurrence. Pour plus de détails contactez-nous.
+                          votre projet afin de vous proposer un résultat qui
+                          fera votre satisfaction, le tout à un prix défiant
+                          toute concurrence. Pour plus de détails
+                          contactez-nous.
                         </p>
                       </div>
                     </div>

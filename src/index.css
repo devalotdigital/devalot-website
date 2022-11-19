@@ -29,7 +29,7 @@
 }
 
 .service-text {
-  @apply text-sm lg:text-base mb-4 text-justify xl:text-lg 2xl:text-3xl 2xl:leading-normal;
+  @apply text-sm lg:text-base mb-4 text-justify  2xl:text-2xl 2xl:leading-normal;
 }
 
 .service-boxl {
@@ -41,7 +41,7 @@
 }
 
 .socials {
-  @apply fill-blueish hover:fill-white hover:scale-125 duration-500;
+  @apply fill-white hover:fill-white hover:scale-125 duration-500;
 }
 
 .navlink {
@@ -49,7 +49,7 @@
 }
 
 .contact {
-  @apply hover:bg-white hover:text-primary duration-500 bg-primary text-lg lg:text-2xl  2xl:text-5xl 2xl:py-7 font-extrabold p-2 md:p-3 w-fit mt-5 z-10 text-white hover:scale-105 hover:shadow-boxl;
+  @apply hover:bg-white hover:text-primary duration-500 bg-primary text-lg md:text-2xl lg:text-2xl  2xl:text-5xl 2xl:py-7 font-extrabold p-2 md:p-3 w-fit mt-5 z-10 text-white hover:scale-105 hover:shadow-boxl;
 }
 
 .submit {
@@ -61,5 +61,5 @@
 }
 
 .error {
-  @apply text-red-500 font-medium w-full duration-150;
+  @apply text-red-500 text-sm font-medium w-full;
 }
