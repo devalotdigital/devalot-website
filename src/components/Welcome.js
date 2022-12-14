@@ -11,7 +11,7 @@ const Welcome = () => {
         <div data-aos="fade-left" className="z-10 w-full lg:w-[70%]">
           <h1 className="font-extrabold text-left text-4xl sm:text-5xl  md:text-6xl lg:text-6xl 2xl:text-[6em] mb-5 2xl:leading-tight">
             {/* Bienvenue chez <br /> Devalot Digital. */}
-            DevAlot, l'agence digital sénégalaise à votre service.
+            DevAlot, l'agence digitale sénégalaise à votre service.
           </h1>
           <p className="text-base sm:text-lg md:text-xl w-[80%] sm:w-[50%] md:w-[70%] lg:text-2xl 2xl:text-[3em] 2xl:leading-normal font-light">
             Vous apportez les{" "}

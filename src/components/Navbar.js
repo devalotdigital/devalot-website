@@ -1,19 +1,19 @@
 import React from "react";
-import logo from "../assets/avatar.png";
+import logo from "../assets/logo.png";
 
 const Navbar = ({ isNavOpen, setIsNavOpen }) => {
   return (
     <header
       className={`${
         isNavOpen
-          ? "fixed -top-[1000px] backdrop-blur-3xl duration-700 w-full text-white z-20 lg:px-0 overflow-hidden"
-          : "fixed top-0 backdrop-blur-3xl bg-white duration-300 w-full text-white z-20 lg:px-0 overflow-hidden"
+          ? "fixed -top-[1000px] duration-700 w-full text-white z-20 lg:px-0 overflow-hidden"
+          : "fixed top-0  backdrop-blur-[2px] duration-300 w-full text-white z-20 lg:px-0 overflow-hidden"
       }`}
     >
       <nav className="font-bold flex justify-between items-center w-11/12 lg:w-10/12 mx-auto py-2 relative ">
         <p className="text-xl lg:text-2xl 2xl:text-5xl text-black">
           {/* DevAlot <span className="font-light text-primary">Digital</span> */}
-          <img src={logo} alt="" className="w-[45px]" />
+          <img src={logo} alt="" className="w-[50px]" />
         </p>
         <ul className="lg:text-[1em] 2xl:text-3xl text-xs text-black flex space-x-9 hidden lg:flex">
           <li>
@@ -44,9 +44,9 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
             setIsNavOpen((prev) => !prev);
           }}
         >
-          <span className="w-9 h-1 bg-primary block"></span>
-          <span className="w-6 h-1 bg-primary block"></span>
-          <span className="w-3 h-1 bg-primary block"></span>
+          <span className="w-9 h-1 bg-white block"></span>
+          <span className="w-9 h-1 bg-white block"></span>
+          <span className="w-9 h-1 bg-white block"></span>
         </div>
       </nav>
     </header>

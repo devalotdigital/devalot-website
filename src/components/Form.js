@@ -69,7 +69,10 @@ const Form = ({ setSuccess, setErrorMessage }) => {
   };
 
   return (
-    <section className="bg-blueish pt-10">
+    <section
+      className="bg-gradient-to-b from-primary to-blueish pt-10"
+      id="form"
+    >
       <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col-reverse lg:flex-row justify-between items-center  h-full lg:space-x-4 lg:gap-10">
         <div className="lg:w-[50%] w-full">
           <h2

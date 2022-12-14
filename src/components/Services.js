@@ -1,10 +1,16 @@
 import React from "react";
+import dev from "../assets/dev.png";
+import wrench from "../assets/wrench.png";
+import design from "../assets/design.png";
+import community from "../assets/community.png";
+import disque from "../assets/disque.png";
+import mobile from "../assets/phone.png";
 
 const Services = () => {
   return (
     <section
       id="services"
-      className="pt-10 w-full h-full bg-primary overflow-x-hidden"
+      className="pt-10 w-full h-full bg-gradient-to-b from-primary to-blueish overflow-hidden"
     >
       <div className="w-11/12 lg:w-10/12 mx-auto">
         <h2
@@ -18,164 +24,110 @@ const Services = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          Nous vous proposons divers services afin de satisfaire vos besoins !
+          Nos divers services pour améliorer votre image sur le Web
         </p>
 
-        <div className="min-h-screen bg-primary  flex flex-col justify-center sm:py-10">
-          <div className="py-3   sm:mx-auto w-full sm:px-0">
-            <div className="relative text-black antialiased  text-lg font-normal ">
-              {/* <!-- Vertical bar running through middle --> */}
-              <div className="hidden md:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
-
-              {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
-              <div className="mt-6 sm:mt-0 sm:mb-12">
-                <div className="flex flex-col sm:flex-row items-center">
-                  <div className="flex justify-start w-full mx-auto items-center">
-                    <div className="w-full md:w-1/2 md:pr-8">
-                      <div
-                        className="service-boxl"
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                      >
-                        <h3 className="service-title">
-                          Conception de site Web
-                        </h3>
-
-                        <p className="service-text">
-                          Nous mettons à votre disposition une équipe de
-                          développeurs passionnés par leur travail et prêts à
-                          relever le défis pour concevoir le site web de vos
-                          rêves. Des sites one page aux sites e-commerce en
-                          passant par les sites vitrines, DevAlot se donne pour
-                          mission de répondre à vos besoins afin de vous
-                          satisfaire. Après création, nous vous proposons de
-                          suivre le comportement de votre site pour une durée de
-                          1 mois.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="service-number">1</div>
-                </div>
-              </div>
-
-              {/* <!-- Right section, set by justify-end and sm:pl-8 --> */}
-              <div className="mt-6 sm:mt-0 sm:mb-12">
-                <div className="flex flex-col sm:flex-row items-center">
-                  <div className="flex justify-end w-full mx-auto items-center">
-                    <div className="w-full md:w-1/2 md:pl-8">
-                      <div
-                        className="service-boxr"
-                        data-aos="fade-left"
-                        data-aos-duration="1200"
-                      >
-                        <h3 className="service-title">
-                          Maintenance de site Web
-                        </h3>
-
-                        <p className="service-text">
-                          Concevoir un site c’est bien, le maintenir c’est
-                          mieux. En effet, le travail de maintenance permet de
-                          suivre votre site et d’améliorer ses performances de
-                          sur le long terme. Nous vous proposons donc des
-                          contrats de maintenance en fonction de vos besoins à
-                          des prix défiants toute concurrence. Notre service de
-                          maintenance comprend tout ce qui va dans le sens de
-                          l’amélioration des performances de votre site.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="service-number">2</div>
-                </div>
-              </div>
-
-              {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
-              <div className="mt-6 sm:mt-0 sm:mb-12">
-                <div className="flex flex-col sm:flex-row items-center">
-                  <div className="flex justify-start w-full mx-auto items-center">
-                    <div className="w-full md:w-1/2 md:pr-8">
-                      <div
-                        className="service-boxl"
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                      >
-                        <h3 className="service-title">Graphisme & Designing</h3>
-
-                        <p className="service-text">
-                          Toujours dans le soucis de vous satisfaire et
-                          d’améliorer l’image de votre entreprise, notre équipe
-                          vous propose ses services afin de: créer des logos
-                          pour vos marques, des posts numériques pour vos
-                          réseaux sociaux, créer des designs de cartes de
-                          visites, flyers et maquettes de site web. L’équipe
-                          vous propose des offres adaptées à vos besoins et
-                          s’engage à vous mettre au centre de la réalisation de
-                          votre projet afin d’obtenir les résultats escomptés.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="service-number">3</div>
-                </div>
-              </div>
-
-              {/* <!-- Right section, set by justify-end and sm:pl-8 --> */}
-              <div className="mt-6 sm:mt-0">
-                <div className="flex flex-col sm:flex-row items-center">
-                  <div className="flex justify-end w-full mx-auto items-center">
-                    <div className="w-full md:w-1/2 md:pl-8">
-                      <div
-                        className="service-boxr"
-                        data-aos="fade-left"
-                        data-aos-duration="1200"
-                      >
-                        <h3 className="service-title">Community Management</h3>
-                        <p className="service-text">
-                          Bien gérer son image digitale et être proche de sa
-                          clientèle cible est une chose primordiale, pour cela
-                          nous pouvons vous aidez à animer votre communauté sur
-                          le Web et conquérir de nouveaux clients. Nous sommes
-                          là pour assurer la communication de votre entreprise
-                          et la bonne gestion de vos réseaux
-                          sociaux.Contactez-nous pour plus de détails.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="service-number">4</div>
-                </div>
-              </div>
-              {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
-              <div className="mt-6 sm:mt-12 sm:mb-0">
-                <div className="flex flex-col sm:flex-row items-center">
-                  <div className="flex justify-start w-full mx-auto items-center">
-                    <div className="w-full md:w-1/2 md:pr-8">
-                      <div
-                        className="service-boxl"
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                      >
-                        <h3 className="service-title">Composition musique</h3>
-
-                        <p className="service-text">
-                          Pour animer vos publicités et autres événements
-                          nécessitant un jingle ou une musique, nous mettons à
-                          votre disposition un compositeur qui vous assistera
-                          dans votre projet de création. Après avoir compris
-                          votre idée, l’équipe se lancera dans la réalisation de
-                          votre projet afin de vous proposer un résultat qui
-                          fera votre satisfaction, le tout à un prix défiant
-                          toute concurrence. Pour plus de détails
-                          contactez-nous.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="service-number">5</div>
-                </div>
-              </div>
+        <div className="flex flex-wrap gap-5 justify-center items-center py-10">
+          {/* création de site web */}
+          <div
+            className="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <div className="flex items-center flex-col">
+              <img src={dev} alt="web" className="service-img" />
+              <h3 className="service-title">Création de Site Web</h3>
             </div>
+            <p className="service-text">
+              Des sites one page aux sites e-commerce en passant par les sites
+              vitrines, nous sommes prêts à relever le défis pour concevoir le
+              site web de vos rêves.
+            </p>
+          </div>
+          {/* graphisme */}
+          <div
+            className="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <div className="flex items-center flex-col">
+              <img
+                src={design}
+                alt="ruler and pencil"
+                className="service-img"
+              />
+              <h3 className="service-title">Graphisme Numérique</h3>
+            </div>
+            <p className="service-text">
+              Confier-nous la création du design de vos logos et cartes de
+              visite, de vos maquettes pour vos sites internet ou encore de
+              flyers pour vos évènements.
+            </p>
+          </div>
+          {/* maintenance */}
+          <div
+            className="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <div className="flex items-center flex-col">
+              <img src={wrench} alt="wrench" className="service-img" />
+              <h3 className="service-title">Maintenance de Site Web</h3>
+            </div>
+            <p className="service-text">
+              Le travail de maintenance permet de suivre votre site afin
+              d’améliorer ses performances sur le long terme. Nous proposons des
+              contrats de maintenance à des prix réduits.
+            </p>
+          </div>
+
+          {/* community management */}
+          <div
+            className="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <div className="flex items-center flex-col">
+              <img src={community} alt="community" className="service-img" />
+              <h3 className="service-title">Community Management</h3>
+            </div>
+            <p className="service-text">
+              Le community management consiste à animer vos réseaux sociaux en
+              créeant du contenu sur ces derniers, gérer la communication de
+              votre entreprise etc...
+            </p>
+          </div>
+          {/* création application mobile */}
+          <div
+            className="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <div className="flex items-center flex-col">
+              <img src={mobile} alt="web" className="service-img" />
+              <h3 className="service-title">Création d'Application Mobile</h3>
+            </div>
+            <p className="service-text">
+              Des sites one page aux sites e-commerce en passant par les sites
+              vitrines, nous sommes prêts à relever le défis pour concevoir le
+              site web de vos rêves.
+            </p>
+          </div>
+          {/* Audio */}
+          <div
+            className="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <div className="flex items-center flex-col">
+              <img src={disque} alt="bass" className="service-img" />
+              <h3 className="service-title">Musique/Voix-Off</h3>
+            </div>
+            <p className="service-text">
+              Pour animer vos publicités et autres événements nécessitant un
+              jingle, une musique ou une voix-off nous sommes à votre
+              disposition
+            </p>
           </div>
         </div>
       </div>

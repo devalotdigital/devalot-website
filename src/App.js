@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import Navbar from "./components/Navbar";
 import Welcome from "./components/Welcome";
-import WhoIs from "./components/WhoIs";
+import AboutUs from "./components/AboutUs";
 import TrustUs from "./components/TrustUs";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
@@ -13,7 +13,7 @@ import PopUp from "./components/PopUp";
 import { BarLoader } from "react-spinners";
 
 import FloatingWhatsApp from "react-floating-whatsapp";
-import whatsappAvatar from "./assets/avatar.png";
+import whatsappAvatar from "./assets/logo.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -57,7 +57,7 @@ function App() {
           <PopUp success={success} errorMessage={errorMessage} />
           <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
           <Welcome />
-          <WhoIs />
+          <AboutUs />
           <TrustUs />
           <Services />
           <Contact />

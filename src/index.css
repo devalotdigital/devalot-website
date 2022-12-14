@@ -25,19 +25,19 @@
 }
 
 .service-title {
-  @apply font-bold text-[1em] lg:text-2xl 2xl:text-4xl text-primary;
+  @apply font-bold text-[1.1em] lg:text-xl 2xl:text-4xl text-center text-primary;
 }
 
 .service-text {
-  @apply text-sm lg:text-base mb-4 text-justify  2xl:text-2xl 2xl:leading-normal;
+  @apply text-sm lg:text-base  text-center  2xl:text-2xl 2xl:leading-normal;
 }
 
-.service-boxl {
-  @apply bg-white  p-4  px-5 bg-white;
+.service-card {
+  @apply bg-white  max-w-[400px] p-4 flex flex-col gap-2 rounded;
 }
 
-.service-boxr {
-  @apply bg-white  p-4 bg-white;
+.service-img {
+  @apply mb-2;
 }
 
 .socials {
@@ -45,7 +45,7 @@
 }
 
 .navlink {
-  @apply hover:text-primary font-semibold duration-150 uppercase;
+  @apply hover:text-primary font-semibold duration-150 text-white;
 }
 
 .contact {

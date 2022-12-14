@@ -2,29 +2,29 @@ import React from "react";
 
 const Sidebar = ({ isNavOpen, setIsNavOpen }) => {
   const open =
-    "fixed top-0 right-0 duration-700 font-white backdrop-blur-3xl z-50";
+    "fixed top-0 right-0 duration-700 font-white bg-gradient-to-b from-primary to-blueish z-50";
   const close =
-    " fixed top-0 -right-[1000px] opacity-0 duration-700 font-white backdrop-blur-3xl  z-50";
+    " fixed top-0 -right-[1000px] opacity-0 duration-700 font-white bg-gradient-to-b from-primary to-blueish  z-50";
   return (
     <div className={`${isNavOpen ? open : close}`}>
       <ul className="flex flex-col items-center font-extrabold h-[100vh] w-[100vw] text-center text-white justify-center space-y-10 lg:hidden">
         <li onClick={() => setIsNavOpen(false)}>
-          <a href="#accueil" className="uppercase navlink">
+          <a href="#accueil" className="navlink">
             Accueil
           </a>
         </li>
         <li onClick={() => setIsNavOpen(false)}>
-          <a href="#whois" className="uppercase navlink">
-            A propos
+          <a href="#whois" className="navlink">
+            A propos de nous
           </a>
         </li>
         <li onClick={() => setIsNavOpen(false)}>
-          <a href="#services" className="uppercase navlink">
+          <a href="#services" className="navlink">
             Nos Services
           </a>
         </li>
         <li onClick={() => setIsNavOpen(false)}>
-          <a href="#contacts" className="uppercase navlink">
+          <a href="#contacts" className="navlink">
             Contacts
           </a>
         </li>
@@ -35,9 +35,8 @@ const Sidebar = ({ isNavOpen, setIsNavOpen }) => {
         onClick={() => setIsNavOpen(false)}
       >
         <svg
-          className="h-12 w-12 text-primary mr-3 cursor-pointer"
+          className="h-12 w-12 text-white mr-3 cursor-pointer"
           viewBox="0 0 24 24"
-          fill="primary"
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"

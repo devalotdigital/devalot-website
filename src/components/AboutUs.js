@@ -4,7 +4,10 @@ import who from "../assets/who.svg";
 
 const WhoIs = () => {
   return (
-    <section id="whois" className="h-[100%] xl:h-[100vh] bg-primary ">
+    <section
+      id="whois"
+      className="h-[100%] xl:h-[100vh] bg-gradient-to-b from-primary to-blueish "
+    >
       <div className="w-11/12 lg:w-10/12 text-white  mx-auto flex flex-col-reverse xl:flex-row-reverse justify-between items-center py-10 h-full lg:space-x-4 lg:gap-10">
         <div className="xl:w-1/2 w-full">
           <h2
