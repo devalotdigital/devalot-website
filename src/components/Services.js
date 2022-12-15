@@ -4,7 +4,7 @@ import wrench from "../assets/wrench.png";
 import design from "../assets/design.png";
 import community from "../assets/community.png";
 import disque from "../assets/disque.png";
-import mobile from "../assets/phone.png";
+// import mobile from "../assets/phone.png";
 
 const Services = () => {
   return (
@@ -24,7 +24,7 @@ const Services = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          Nos divers services pour améliorer votre image sur le Web
+          Les divers services que nous vous proposons :
         </p>
 
         <div className="flex flex-wrap gap-5 justify-center items-center py-10">
@@ -60,7 +60,7 @@ const Services = () => {
             </div>
             <p className="service-text">
               Confier-nous la création du design de vos logos et cartes de
-              visite, de vos maquettes pour vos sites internet ou encore de
+              visite, de vos maquettes pour vos sites internet ou même de vos
               flyers pour vos évènements.
             </p>
           </div>
@@ -93,12 +93,12 @@ const Services = () => {
             </div>
             <p className="service-text">
               Le community management consiste à animer vos réseaux sociaux en
-              créeant du contenu sur ces derniers, gérer la communication de
+              créant du contenu sur ces derniers, gérer la communication de
               votre entreprise etc...
             </p>
           </div>
           {/* création application mobile */}
-          <div
+          {/* <div
             className="service-card"
             data-aos="fade-up"
             data-aos-duration="1100"
@@ -112,7 +112,7 @@ const Services = () => {
               vitrines, nous sommes prêts à relever le défis pour concevoir le
               site web de vos rêves.
             </p>
-          </div>
+          </div> */}
           {/* Audio */}
           <div
             className="service-card"
@@ -121,12 +121,12 @@ const Services = () => {
           >
             <div className="flex items-center flex-col">
               <img src={disque} alt="bass" className="service-img" />
-              <h3 className="service-title">Musique/Voix-Off</h3>
+              <h3 className="service-title">Audio/Voix-Off</h3>
             </div>
             <p className="service-text">
-              Pour animer vos publicités et autres événements nécessitant un
-              jingle, une musique ou une voix-off nous sommes à votre
-              disposition
+              Pour animer vos publicités à la radio ou autres événements
+              nécessitant un jingle, une musique ou une voix-off nous sommes à
+              votre disposition
             </p>
           </div>
         </div>

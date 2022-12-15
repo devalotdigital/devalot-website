@@ -7,14 +7,16 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
       className={`${
         isNavOpen
           ? "fixed -top-[1000px] duration-700 w-full text-white z-20 lg:px-0 overflow-hidden"
-          : "fixed top-0  backdrop-blur-[2px] duration-300 w-full text-white z-20 lg:px-0 overflow-hidden"
+          : "fixed top-0  backdrop-blur-[10px] bg-blueish/50 duration-300 w-full text-white z-20 lg:px-0 overflow-hidden"
       }`}
     >
       <nav className="font-bold flex justify-between items-center w-11/12 lg:w-10/12 mx-auto py-2 relative ">
-        <p className="text-xl lg:text-2xl 2xl:text-5xl text-black">
-          {/* DevAlot <span className="font-light text-primary">Digital</span> */}
+        <div className="text-xl lg:text-2xl 2xl:text-5xl text-white flex items-center gap-2">
           <img src={logo} alt="" className="w-[50px]" />
-        </p>
+          <p className="leading-6">
+            DevAlot <br /> <span className="font-light">Digital</span>
+          </p>
+        </div>
         <ul className="lg:text-[1em] 2xl:text-3xl text-xs text-black flex space-x-9 hidden lg:flex">
           <li>
             <a href="#accueil" className="navlink">
@@ -28,7 +30,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
           </li>
           <li>
             <a href="#services" className="navlink">
-              Nos Services
+              Services
             </a>
           </li>
           <li>

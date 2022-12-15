@@ -19,19 +19,18 @@ const WhoIs = () => {
           </h2>
           <div className="text-sm lg:text-base 2xl:text-3xl 2xl:mt-10 text-justify">
             <p className="2xl:leading-normal" data-aos="fade-up">
-              DevAlot Digital est une agence digitale sénégalaise spécialisée
-              dans le web fondée par un groupe de passionnés des métiers du
-              digital.
+              DevAlot Digital est une agence digitale sénégalaise basée à Dakar
+              et spécialisée dans le web. Elle a été mise en place par un groupe
+              de passionnés des métiers du digital.
             </p>{" "}
             <br />
             <p className="2xl:leading-normal" data-aos="fade-up">
               DevAlot, signifie litteralement : "Develop a lot" en anglais, cela
               fait allusion à l'aide que l'on peut apporter aux entreprises qui
               cherchent à se développer voir s'étendre du point de vue digital
-              mais il témoigne aussi de notre passion pour les métiers du Web
-              (notamment le developpement web), qui sont à notre humble avis
-              indispensables de nos jours à l'expansion des entreprises qui se
-              disent modernes.
+              mais il témoigne aussi de notre passion pour les métiers du
+              digital, qui sont à notre humble avis, indispensables de nos jours
+              à l'expansion des entreprises qui se disent modernes.
             </p>
             <br />
             <p className="2xl:leading-normal" data-aos="fade-up">

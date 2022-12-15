@@ -22,7 +22,7 @@ module.exports = {
       },
       boxShadow: {
         box: "10px 10px 0px 0px rgba(0,0,0,0.75);",
-        boxl: "-10px 10px 0px 0px rgba(0,0,0,0.75);",
+        boxl: "-10px 10px 0px 0px #1479B7;",
       },
     },
   },

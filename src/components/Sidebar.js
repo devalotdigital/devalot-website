@@ -15,12 +15,12 @@ const Sidebar = ({ isNavOpen, setIsNavOpen }) => {
         </li>
         <li onClick={() => setIsNavOpen(false)}>
           <a href="#whois" className="navlink">
-            A propos de nous
+            A propos
           </a>
         </li>
         <li onClick={() => setIsNavOpen(false)}>
           <a href="#services" className="navlink">
-            Nos Services
+            Services
           </a>
         </li>
         <li onClick={() => setIsNavOpen(false)}>
